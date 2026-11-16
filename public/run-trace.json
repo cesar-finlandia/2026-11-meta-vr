@@ -1,0 +1,702 @@
+{
+  "version": "1.0.0",
+  "run_id": "sess-1794782216680-y33am",
+  "started_at": "2026-11-15T22:36:56.680Z",
+  "entries": [
+    {
+      "seq": 1,
+      "round": 1,
+      "kind": "action",
+      "name": "scan_room_planes",
+      "source": "agent",
+      "input_ref": null,
+      "args": {},
+      "output_ref": null,
+      "ok": true,
+      "latency_ms": 6,
+      "state_change": {
+        "revision_before": 1,
+        "revision_after": 1,
+        "entity_ids": []
+      }
+    },
+    {
+      "seq": 2,
+      "round": 1,
+      "kind": "action",
+      "name": "toggle_seated_scale_twin",
+      "source": "agent",
+      "input_ref": null,
+      "args": {
+        "enabled": true
+      },
+      "output_ref": null,
+      "ok": true,
+      "latency_ms": 7,
+      "state_change": {
+        "revision_before": 1,
+        "revision_after": 2,
+        "entity_ids": []
+      }
+    },
+    {
+      "seq": 3,
+      "round": 1,
+      "kind": "action",
+      "name": "filter_curatorial_theme",
+      "source": "agent",
+      "input_ref": null,
+      "args": {
+        "brief": "Curate a focused salon exhibition of Japanese woodblock prints and botanical studies on the north wall, keeping paper lux under 50 lux and wheelchair viewing pitch comfortable."
+      },
+      "output_ref": null,
+      "ok": true,
+      "latency_ms": 7,
+      "state_change": {
+        "revision_before": 2,
+        "revision_after": 3,
+        "entity_ids": []
+      }
+    },
+    {
+      "seq": 4,
+      "round": 1,
+      "kind": "model",
+      "name": "curatorial_planner",
+      "source": "agent",
+      "input_ref": null,
+      "output_ref": null,
+      "ok": true,
+      "tokens": {
+        "promptTokens": 2138,
+        "outputTokens": 236,
+        "totalTokens": 3984
+      },
+      "latency_ms": 6
+    },
+    {
+      "seq": 5,
+      "round": 2,
+      "kind": "model",
+      "name": "layout_strategist",
+      "source": "agent",
+      "input_ref": null,
+      "output_ref": null,
+      "ok": true,
+      "tokens": {
+        "promptTokens": 935,
+        "outputTokens": 406,
+        "totalTokens": 6334
+      },
+      "latency_ms": 3
+    },
+    {
+      "seq": 6,
+      "round": 2,
+      "kind": "action",
+      "name": "place_framed_artwork",
+      "source": "agent",
+      "input_ref": null,
+      "args": {
+        "wallIdOrName": "wall-north",
+        "artworkIdOrTitle": "aic-80607",
+        "centerX_cm": 174.5,
+        "centerY_cm": 142,
+        "spotLux": 45
+      },
+      "output_ref": null,
+      "ok": true,
+      "latency_ms": 2,
+      "state_change": {
+        "revision_before": 7,
+        "revision_after": 8,
+        "entity_ids": []
+      }
+    },
+    {
+      "seq": 7,
+      "round": 2,
+      "kind": "action",
+      "name": "place_framed_artwork",
+      "source": "agent",
+      "input_ref": null,
+      "args": {
+        "wallIdOrName": "wall-north",
+        "artworkIdOrTitle": "aic-93798",
+        "centerX_cm": 260,
+        "centerY_cm": 142,
+        "spotLux": 45
+      },
+      "output_ref": null,
+      "ok": true,
+      "latency_ms": 1,
+      "state_change": {
+        "revision_before": 8,
+        "revision_after": 9,
+        "entity_ids": []
+      }
+    },
+    {
+      "seq": 8,
+      "round": 2,
+      "kind": "action",
+      "name": "place_framed_artwork",
+      "source": "agent",
+      "input_ref": null,
+      "args": {
+        "wallIdOrName": "wall-west",
+        "artworkIdOrTitle": "aic-24645",
+        "centerX_cm": 151,
+        "centerY_cm": 142,
+        "spotLux": 45
+      },
+      "output_ref": null,
+      "ok": true,
+      "latency_ms": 1,
+      "state_change": {
+        "revision_before": 9,
+        "revision_after": 10,
+        "entity_ids": []
+      }
+    },
+    {
+      "seq": 9,
+      "round": 2,
+      "kind": "action",
+      "name": "place_framed_artwork",
+      "source": "agent",
+      "input_ref": null,
+      "args": {
+        "wallIdOrName": "wall-west",
+        "artworkIdOrTitle": "aic-87479",
+        "centerX_cm": 215,
+        "centerY_cm": 142,
+        "spotLux": 45
+      },
+      "output_ref": null,
+      "ok": true,
+      "latency_ms": 1,
+      "state_change": {
+        "revision_before": 10,
+        "revision_after": 11,
+        "entity_ids": []
+      }
+    },
+    {
+      "seq": 10,
+      "round": 2,
+      "kind": "action",
+      "name": "place_framed_artwork",
+      "source": "agent",
+      "input_ref": null,
+      "args": {
+        "wallIdOrName": "wall-east",
+        "artworkIdOrTitle": "aic-109439",
+        "centerX_cm": 152,
+        "centerY_cm": 142,
+        "spotLux": 45
+      },
+      "output_ref": null,
+      "ok": true,
+      "latency_ms": 1,
+      "state_change": {
+        "revision_before": 11,
+        "revision_after": 12,
+        "entity_ids": []
+      }
+    },
+    {
+      "seq": 11,
+      "round": 2,
+      "kind": "action",
+      "name": "place_framed_artwork",
+      "source": "agent",
+      "input_ref": null,
+      "args": {
+        "wallIdOrName": "wall-east",
+        "artworkIdOrTitle": "aic-90541",
+        "centerX_cm": 214,
+        "centerY_cm": 142,
+        "spotLux": 45
+      },
+      "output_ref": null,
+      "ok": true,
+      "latency_ms": 1,
+      "state_change": {
+        "revision_before": 12,
+        "revision_after": 13,
+        "entity_ids": []
+      }
+    },
+    {
+      "seq": 12,
+      "round": 2,
+      "kind": "action",
+      "name": "adjust_frame_height",
+      "source": "agent",
+      "input_ref": null,
+      "args": {
+        "mountIdOrTitle": "mnt-wall-north-aic-80607",
+        "centerY_cm": 174
+      },
+      "output_ref": null,
+      "ok": true,
+      "latency_ms": 1,
+      "state_change": {
+        "revision_before": 13,
+        "revision_after": 14,
+        "entity_ids": []
+      }
+    },
+    {
+      "seq": 13,
+      "round": 2,
+      "kind": "action",
+      "name": "set_spot_illumination",
+      "source": "agent",
+      "input_ref": null,
+      "args": {
+        "mountIdOrTitle": "mnt-wall-north-aic-80607",
+        "spotLux": 120
+      },
+      "output_ref": null,
+      "ok": true,
+      "latency_ms": 1,
+      "state_change": {
+        "revision_before": 14,
+        "revision_after": 15,
+        "entity_ids": []
+      }
+    },
+    {
+      "seq": 14,
+      "round": 2,
+      "kind": "action",
+      "name": "scrub_timeline_snapshot",
+      "source": "agent",
+      "input_ref": null,
+      "args": {
+        "mode": "save",
+        "label": "Initial Hang Proposal"
+      },
+      "output_ref": null,
+      "ok": true,
+      "latency_ms": 1,
+      "state_change": {
+        "revision_before": 15,
+        "revision_after": 16,
+        "entity_ids": []
+      }
+    },
+    {
+      "seq": 15,
+      "round": 3,
+      "kind": "action",
+      "name": "compute_sightline_frustum",
+      "source": "agent",
+      "input_ref": null,
+      "args": {},
+      "output_ref": null,
+      "ok": true,
+      "latency_ms": 1,
+      "state_change": {
+        "revision_before": 16,
+        "revision_after": 16,
+        "entity_ids": []
+      }
+    },
+    {
+      "seq": 16,
+      "round": 3,
+      "kind": "action",
+      "name": "validate_ada_compliance",
+      "source": "agent",
+      "input_ref": null,
+      "args": {},
+      "output_ref": null,
+      "ok": true,
+      "latency_ms": 0,
+      "state_change": {
+        "revision_before": 16,
+        "revision_after": 16,
+        "entity_ids": []
+      },
+      "truth": {
+        "errors": 4,
+        "warnings": 0
+      }
+    },
+    {
+      "seq": 17,
+      "round": 3,
+      "kind": "action",
+      "name": "check_fov_label_legibility",
+      "source": "agent",
+      "input_ref": null,
+      "args": {},
+      "output_ref": null,
+      "ok": true,
+      "latency_ms": 0,
+      "state_change": {
+        "revision_before": 16,
+        "revision_after": 16,
+        "entity_ids": []
+      }
+    },
+    {
+      "seq": 18,
+      "round": 3,
+      "kind": "model",
+      "name": "repair_critic",
+      "source": "agent",
+      "input_ref": null,
+      "output_ref": null,
+      "ok": true,
+      "tokens": {
+        "promptTokens": 1705,
+        "outputTokens": 470,
+        "totalTokens": 3300
+      },
+      "latency_ms": 3
+    },
+    {
+      "seq": 19,
+      "round": 3,
+      "kind": "action",
+      "name": "repair_layout_violation",
+      "source": "agent",
+      "input_ref": null,
+      "args": {
+        "mountIdOrTitle": "mnt-wall-north-aic-80607",
+        "targetCenterY_cm": 145,
+        "targetSpotLux": 45,
+        "targetFontHeight_mm": 28
+      },
+      "output_ref": null,
+      "ok": true,
+      "latency_ms": 3,
+      "state_change": {
+        "revision_before": 16,
+        "revision_after": 19,
+        "entity_ids": []
+      }
+    },
+    {
+      "seq": 20,
+      "round": 3,
+      "kind": "action",
+      "name": "repair_layout_violation",
+      "source": "agent",
+      "input_ref": null,
+      "args": {
+        "mountIdOrTitle": "mnt-wall-north-aic-80607",
+        "targetCenterY_cm": 145,
+        "targetSpotLux": 45,
+        "targetFontHeight_mm": 28
+      },
+      "output_ref": null,
+      "ok": true,
+      "latency_ms": 4,
+      "state_change": {
+        "revision_before": 19,
+        "revision_after": 22,
+        "entity_ids": []
+      }
+    },
+    {
+      "seq": 21,
+      "round": 3,
+      "kind": "action",
+      "name": "repair_layout_violation",
+      "source": "agent",
+      "input_ref": null,
+      "args": {
+        "mountIdOrTitle": "mnt-wall-north-aic-80607",
+        "targetCenterY_cm": 145,
+        "targetSpotLux": 45,
+        "targetFontHeight_mm": 28
+      },
+      "output_ref": null,
+      "ok": true,
+      "latency_ms": 3,
+      "state_change": {
+        "revision_before": 22,
+        "revision_after": 25,
+        "entity_ids": []
+      }
+    },
+    {
+      "seq": 22,
+      "round": 3,
+      "kind": "action",
+      "name": "repair_layout_violation",
+      "source": "agent",
+      "input_ref": null,
+      "args": {
+        "mountIdOrTitle": "mnt-wall-north-aic-80607",
+        "targetCenterY_cm": 145,
+        "targetSpotLux": 45,
+        "targetFontHeight_mm": 28
+      },
+      "output_ref": null,
+      "ok": true,
+      "latency_ms": 4,
+      "state_change": {
+        "revision_before": 25,
+        "revision_after": 28,
+        "entity_ids": []
+      }
+    },
+    {
+      "seq": 23,
+      "round": 3,
+      "kind": "action",
+      "name": "compute_sightline_frustum",
+      "source": "agent",
+      "input_ref": null,
+      "args": {},
+      "output_ref": null,
+      "ok": true,
+      "latency_ms": 1,
+      "state_change": {
+        "revision_before": 28,
+        "revision_after": 28,
+        "entity_ids": []
+      }
+    },
+    {
+      "seq": 24,
+      "round": 3,
+      "kind": "action",
+      "name": "validate_ada_compliance",
+      "source": "agent",
+      "input_ref": null,
+      "args": {},
+      "output_ref": null,
+      "ok": true,
+      "latency_ms": 1,
+      "state_change": {
+        "revision_before": 28,
+        "revision_after": 28,
+        "entity_ids": []
+      },
+      "truth": {
+        "errors": 0,
+        "warnings": 0
+      }
+    },
+    {
+      "seq": 25,
+      "round": 3,
+      "kind": "action",
+      "name": "scrub_timeline_snapshot",
+      "source": "agent",
+      "input_ref": null,
+      "args": {
+        "mode": "save",
+        "label": "ADA & Conservation Verified"
+      },
+      "output_ref": null,
+      "ok": true,
+      "latency_ms": 2,
+      "state_change": {
+        "revision_before": 28,
+        "revision_after": 29,
+        "entity_ids": []
+      }
+    },
+    {
+      "seq": 26,
+      "round": 4,
+      "kind": "model",
+      "name": "interpretive_writer",
+      "source": "agent",
+      "input_ref": null,
+      "output_ref": null,
+      "ok": true,
+      "tokens": {
+        "promptTokens": 528,
+        "outputTokens": 363,
+        "totalTokens": 1736
+      },
+      "latency_ms": 3
+    },
+    {
+      "seq": 27,
+      "round": 4,
+      "kind": "action",
+      "name": "draft_curatorial_placard",
+      "source": "agent",
+      "input_ref": null,
+      "args": {
+        "mountIdOrTitle": "mnt-wall-north-aic-80607",
+        "curatorialNote": "This six-panel screen study uses ink, color, and gold on paper to depict vibrant irises. The composition features bold, rhythmic curves of the flowers and leaves, creating a decorative pattern that repeats across the panels. This artwork celebrates the beauty of nature, transforming a botanical subject into a powerful, almost architectural, design element that shapes the viewing space.",
+        "fontHeight_mm": 28
+      },
+      "output_ref": null,
+      "ok": true,
+      "latency_ms": 3,
+      "state_change": {
+        "revision_before": 29,
+        "revision_after": 30,
+        "entity_ids": []
+      }
+    },
+    {
+      "seq": 28,
+      "round": 4,
+      "kind": "action",
+      "name": "draft_curatorial_placard",
+      "source": "agent",
+      "input_ref": null,
+      "args": {
+        "mountIdOrTitle": "mnt-wall-north-aic-93798",
+        "curatorialNote": "This album leaf, rendered in ink and color on paper, presents a delicate study of a white peony and bamboo. The artist uses precise brushwork to capture the plants' natural forms, emphasizing their individual characteristics. This botanical work highlights the intricate beauty of flora, often cultivated and arranged within designed landscapes, connecting natural growth with human-made architectural spaces.",
+        "fontHeight_mm": 28
+      },
+      "output_ref": null,
+      "ok": true,
+      "latency_ms": 2,
+      "state_change": {
+        "revision_before": 30,
+        "revision_after": 31,
+        "entity_ids": []
+      }
+    },
+    {
+      "seq": 29,
+      "round": 4,
+      "kind": "action",
+      "name": "draft_curatorial_placard",
+      "source": "agent",
+      "input_ref": null,
+      "args": {
+        "mountIdOrTitle": "mnt-wall-west-aic-24645",
+        "curatorialNote": "This polychrome woodblock print, made with ink and color on paper, captures a colossal wave threatening small boats. The dynamic composition uses strong curves and diagonals to convey immense power, with distant Mount Fuji providing a stable counterpoint. The wave's imposing, almost structural form, alongside the human-made vessels, powerfully connects natural forces with architectural elements.",
+        "fontHeight_mm": 28
+      },
+      "output_ref": null,
+      "ok": true,
+      "latency_ms": 3,
+      "state_change": {
+        "revision_before": 31,
+        "revision_after": 32,
+        "entity_ids": []
+      }
+    },
+    {
+      "seq": 30,
+      "round": 4,
+      "kind": "action",
+      "name": "preview_wheelchair_eye_level",
+      "source": "agent",
+      "input_ref": null,
+      "args": {
+        "enabled": true
+      },
+      "output_ref": null,
+      "ok": true,
+      "latency_ms": 3,
+      "state_change": {
+        "revision_before": 32,
+        "revision_after": 33,
+        "entity_ids": []
+      }
+    },
+    {
+      "seq": 31,
+      "round": 4,
+      "kind": "approval",
+      "name": "pin_spatial_anchor",
+      "source": "agent",
+      "input_ref": null,
+      "args": {
+        "wallIdOrName": "wall-north",
+        "label": "North Wall Final Hang Schedule"
+      },
+      "output_ref": null,
+      "ok": true,
+      "decision": "Approved by curator.",
+      "latency_ms": 0
+    },
+    {
+      "seq": 32,
+      "round": 4,
+      "kind": "action",
+      "name": "pin_spatial_anchor",
+      "source": "agent",
+      "input_ref": null,
+      "args": {
+        "wallIdOrName": "wall-north",
+        "label": "North Wall Final Hang Schedule"
+      },
+      "output_ref": null,
+      "ok": true,
+      "latency_ms": 12,
+      "state_change": {
+        "revision_before": 33,
+        "revision_after": 35,
+        "entity_ids": []
+      }
+    },
+    {
+      "seq": 33,
+      "round": 4,
+      "kind": "action",
+      "name": "export_exhibition_manifest",
+      "source": "agent",
+      "input_ref": null,
+      "args": {},
+      "output_ref": null,
+      "ok": true,
+      "latency_ms": 2,
+      "state_change": {
+        "revision_before": 35,
+        "revision_after": 35,
+        "entity_ids": []
+      }
+    },
+    {
+      "seq": 34,
+      "round": 4,
+      "kind": "action",
+      "name": "validate_ada_compliance",
+      "source": "agent",
+      "input_ref": null,
+      "args": {},
+      "output_ref": null,
+      "ok": true,
+      "latency_ms": 1,
+      "state_change": {
+        "revision_before": 35,
+        "revision_after": 35,
+        "entity_ids": []
+      },
+      "truth": {
+        "errors": 0,
+        "warnings": 0
+      }
+    }
+  ],
+  "summary": {
+    "model_calls": 4,
+    "actions": 29,
+    "rounds": 4,
+    "model_roles": [
+      "curatorial_planner",
+      "layout_strategist",
+      "repair_critic",
+      "interpretive_writer"
+    ],
+    "verify_repair_rounds": 7,
+    "human_checkpoints": 1,
+    "approvals": {
+      "approved": 1,
+      "rejected": 0
+    },
+    "final_truth": {
+      "errors": 0,
+      "warnings": 0
+    }
+  }
+}

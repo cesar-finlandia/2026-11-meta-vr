@@ -1,0 +1,45 @@
+{
+  "hash": "1274e04d85393dfb88f69d84fbef296ddb900f78d36c8e069b6acfff12073533",
+  "role": "repair_critic",
+  "model": "gemini-2.5-flash",
+  "recordedAt": "2026-11-15T21:39:28.420Z",
+  "usage": {
+    "promptTokens": 1817,
+    "outputTokens": 420,
+    "totalTokens": 5839
+  },
+  "payload": {
+    "repairs": [
+      {
+        "issueId": "issue-ada-pitch-mnt-wall-north-aic-44291",
+        "mountId": "mnt-wall-north-aic-44291",
+        "targetCenterY_cm": 145,
+        "targetSpotLux": 45,
+        "targetFontHeight_mm": 28
+      },
+      {
+        "issueId": "issue-centerline-mnt-wall-north-aic-44291",
+        "mountId": "mnt-wall-north-aic-44291",
+        "targetCenterY_cm": 145,
+        "targetSpotLux": 45,
+        "targetFontHeight_mm": 28
+      },
+      {
+        "issueId": "issue-placard-height-mnt-wall-north-aic-44291",
+        "mountId": "mnt-wall-north-aic-44291",
+        "targetCenterY_cm": 145,
+        "targetSpotLux": 45,
+        "targetFontHeight_mm": 28
+      },
+      {
+        "issueId": "issue-cci-lux-mnt-wall-north-aic-44291",
+        "mountId": "mnt-wall-north-aic-44291",
+        "targetCenterY_cm": 145,
+        "targetSpotLux": 45,
+        "targetFontHeight_mm": 28
+      }
+    ],
+    "wallsToReflow": [],
+    "criticSummary": "All reported violations have been addressed by adjusting artwork centerlines, placard font heights, and spotlight illuminance to meet accessibility and conservation standards."
+  }
+}

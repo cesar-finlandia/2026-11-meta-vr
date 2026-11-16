@@ -1,0 +1,30 @@
+{
+  "hash": "8e81d0f6d6d57bb55a3aa6bbc8890ee4be450cb8dfc84d140b850e9fba49e44d",
+  "role": "interpretive_writer",
+  "model": "gemini-2.5-flash",
+  "recordedAt": "2026-11-15T21:39:34.920Z",
+  "usage": {
+    "promptTokens": 515,
+    "outputTokens": 344,
+    "totalTokens": 1475
+  },
+  "payload": {
+    "placards": [
+      {
+        "mountId": "mnt-wall-north-aic-44291",
+        "curatorialNote": "This etching with drypoint captures the intricate details of a cathedral portal. Meryon uses strong lines and deep shadows to emphasize the monumental scale and gothic ornamentation. The morning light highlights the architectural grandeur, inviting viewers to appreciate the craftsmanship and historical presence of the structure. It exemplifies the enduring beauty of human-made forms.",
+        "fontHeight_mm": 28
+      },
+      {
+        "mountId": "mnt-wall-north-aic-72819",
+        "curatorialNote": "Sargent’s watercolor and graphite sketch depicts a Venetian terrace arcade. Loose brushstrokes and subtle graphite lines capture the interplay of light and shadow on the architectural forms. The impressionistic style conveys the fleeting atmosphere of the scene, emphasizing how light transforms built environments. This work beautifully merges architectural observation with atmospheric rendering.",
+        "fontHeight_mm": 28
+      },
+      {
+        "mountId": "mnt-wall-north-aic-90541",
+        "curatorialNote": "This vibrant woodblock print by Hiroshige illustrates a serene bamboo courtyard. The composition skillfully balances the verticality of the bamboo with subtle architectural elements in the background. Ink and color on paper create a sense of depth and tranquility. It highlights the harmonious integration of natural botanical forms within urban architectural spaces, a common theme in Japanese art.",
+        "fontHeight_mm": 28
+      }
+    ]
+  }
+}

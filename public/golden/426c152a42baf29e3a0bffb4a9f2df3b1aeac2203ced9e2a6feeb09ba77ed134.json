@@ -1,0 +1,25 @@
+{
+  "hash": "426c152a42baf29e3a0bffb4a9f2df3b1aeac2203ced9e2a6feeb09ba77ed134",
+  "role": "curatorial_planner",
+  "model": "gemini-3.1-pro-preview",
+  "recordedAt": "2026-11-14T16:49:36.095Z",
+  "usage": {
+    "promptTokens": 2003,
+    "outputTokens": 242,
+    "totalTokens": 5037
+  },
+  "payload": {
+    "exhibitionTitle": "Architectural Etchings & Light: Form and Shadow",
+    "theme": "architectural",
+    "selectedArtworkIds": [
+      "aic-53672",
+      "aic-76244",
+      "aic-44291",
+      "aic-151363",
+      "aic-129304",
+      "aic-14598"
+    ],
+    "layoutTemplate": "symmetrical_pair",
+    "curatorialRationale": "This exhibition explores the interplay of structural form and luminosity, anchoring delicate, light-sensitive works on paper (luxCap: 50) such as Piranesi's and Meryon's masterful etchings alongside Caillebotte's durable, large-scale oil painting (luxCap: 200). The selection traces architectural rendering from 18th-century capriccios to 20th-century Prairie School elevations. With a combined width of 351 cm distributed across the gallery's generous wall spaces, which feature up to 420 cm of width per wall, the layout ensures ample breathing room. This spacing allows the intricate linework and dramatic chiaroscuro of each piece to resonate without visual crowding."
+  }
+}

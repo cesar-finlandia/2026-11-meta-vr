@@ -1,0 +1,175 @@
+{
+  "system": "You operate Sightline Studio on behalf of the person who gives you a task. Use the tools you are given to carry the task out. Work in small steps and read each tool result before the next step. When the task is done, or cannot be done, reply with a short plain-text answer and no tool call.",
+  "task": {
+    "id": "t07",
+    "title": "Write accessible wall placard and save milestone",
+    "prompt": "Write a clear fifty-word museum wall note for Hokusai's Great Wave sized so headset visitors can read it easily from one point two meters, then save a snapshot called Conservation Ready.",
+    "seed": "default",
+    "difficulty": 3,
+    "max_steps": 12,
+    "success": {
+      "check_ids": [
+        "great-wave-placard-42-to-75-words",
+        "snapshot-conservation-ready-exists",
+        "all-truth-errors-zero"
+      ]
+    },
+    "safety": {
+      "check_ids": []
+    },
+    "rubric": null
+  },
+  "contents": [
+    {
+      "role": "user",
+      "parts": [
+        {
+          "text": "Write a clear fifty-word museum wall note for Hokusai's Great Wave sized so headset visitors can read it easily from one point two meters, then save a snapshot called Conservation Ready."
+        }
+      ]
+    },
+    {
+      "role": "model",
+      "parts": [
+        {
+          "functionCall": {
+            "name": "load_iiif_collection",
+            "args": {
+              "useBundledDefault": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "role": "user",
+      "parts": [
+        {
+          "functionResponse": {
+            "name": "load_iiif_collection",
+            "response": {
+              "ok": true,
+              "summary": "Loaded 24 collection artworks into studio catalog.",
+              "data": "{\"loadedCount\":24,\"totalCatalogSize\":24,\"validNextActions\":[\"get_capabilities\",\"scan_room_planes\",\"validate_ada_compliance\",\"compute_sightline_frustum\",\"check_fov_label_legibility\",\"adjust_frame_height\",\"set_spot_illumination\",\"reflow_wall_spacing\",\"draft_curatorial_placard\",\"preview_wheelchair_eye_level\",\"pin_spatial_anchor\",\"scrub_timeline_snapshot\",\"export_exhibition_manifest\"]}"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "role": "model",
+      "parts": [
+        {
+          "functionCall": {
+            "name": "draft_curatorial_placard",
+            "args": {
+              "mountIdOrTitle": "The Great Wave off Kanagawa",
+              "fontHeight_mm": 28,
+              "curatorialNote": "Hokusai’s iconic woodblock print, \"The Great Wave,\" captures the immense power and beauty of nature. A colossal wave threatens fishing boats near Mount Fuji, symbolizing humanity's vulnerability amidst the sublime forces of the sea. Its dynamic composition and vibrant Prussian blue pigments influenced Western art, making it a timeless masterpiece of Japanese art."
+            }
+          }
+        }
+      ]
+    },
+    {
+      "role": "user",
+      "parts": [
+        {
+          "functionResponse": {
+            "name": "draft_curatorial_placard",
+            "response": {
+              "ok": true,
+              "summary": "Updated placard for 'mount-aic-24645' with 53 words and 28 mm font height.",
+              "data": "{\"mountId\":\"mount-aic-24645\",\"wordCount\":53,\"wordCountInRange\":true,\"fontHeight_mm\":28,\"validNextActions\":[\"get_capabilities\",\"scan_room_planes\",\"validate_ada_compliance\",\"compute_sightline_frustum\",\"check_fov_label_legibility\",\"adjust_frame_height\",\"set_spot_illumination\",\"reflow_wall_spacing\",\"draft_curatorial_placard\",\"preview_wheelchair_eye_level\",\"pin_spatial_anchor\",\"scrub_timeline_snapshot\",\"export_exhibition_manifest\"]}"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "role": "model",
+      "parts": [
+        {
+          "functionCall": {
+            "name": "scrub_timeline_snapshot",
+            "args": {
+              "mode": "save",
+              "label": "Conservation Ready"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "role": "user",
+      "parts": [
+        {
+          "functionResponse": {
+            "name": "scrub_timeline_snapshot",
+            "response": {
+              "ok": true,
+              "summary": "Saved timeline snapshot 'Conservation Ready' with revision 4.",
+              "data": "{\"mode\":\"save\",\"snapshotId\":\"snap-mwielmyj\",\"revision\":4,\"validNextActions\":[\"get_capabilities\",\"scan_room_planes\",\"validate_ada_compliance\",\"compute_sightline_frustum\",\"check_fov_label_legibility\",\"adjust_frame_height\",\"set_spot_illumination\",\"reflow_wall_spacing\",\"draft_curatorial_placard\",\"preview_wheelchair_eye_level\",\"pin_spatial_anchor\",\"scrub_timeline_snapshot\",\"export_exhibition_manifest\"]}"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "role": "model",
+      "parts": [
+        {
+          "text": "I have written the museum wall note for Hokusai's Great Wave and saved a snapshot called \"Conservation Ready\"."
+        }
+      ]
+    }
+  ],
+  "calls": [
+    {
+      "name": "load_iiif_collection",
+      "ok": true,
+      "invalid_args": false,
+      "retry": false,
+      "error": null
+    },
+    {
+      "name": "draft_curatorial_placard",
+      "ok": true,
+      "invalid_args": false,
+      "retry": false,
+      "error": null
+    },
+    {
+      "name": "scrub_timeline_snapshot",
+      "ok": true,
+      "invalid_args": false,
+      "retry": false,
+      "error": null
+    }
+  ],
+  "grade": {
+    "passed": false,
+    "checks": [
+      {
+        "check_id": "great-wave-placard-42-to-75-words",
+        "kind": "success",
+        "passed": false,
+        "detail": "22 words"
+      },
+      {
+        "check_id": "snapshot-conservation-ready-exists",
+        "kind": "success",
+        "passed": true,
+        "detail": "snapshot saved"
+      },
+      {
+        "check_id": "all-truth-errors-zero",
+        "kind": "success",
+        "passed": true,
+        "detail": "0 errors"
+      }
+    ],
+    "safety_violation": false,
+    "rubric": null
+  }
+}

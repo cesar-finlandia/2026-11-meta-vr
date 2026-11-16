@@ -1,0 +1,25 @@
+{
+  "hash": "554763a37ff077ad67241d041a04a8d2c97c3c22ec3ea604c0375e3756368692",
+  "role": "curatorial_planner",
+  "model": "gemini-3.1-pro-preview",
+  "recordedAt": "2026-11-14T16:52:20.103Z",
+  "usage": {
+    "promptTokens": 2002,
+    "outputTokens": 288,
+    "totalTokens": 3857
+  },
+  "payload": {
+    "exhibitionTitle": "Constructed Visions: The Architectural Impulse",
+    "theme": "architectural",
+    "selectedArtworkIds": [
+      "aic-14598",
+      "aic-28560",
+      "aic-53672",
+      "aic-76244",
+      "aic-151363",
+      "aic-129304"
+    ],
+    "layoutTemplate": "symmetrical_pair",
+    "curatorialRationale": "This exhibition explores the architectural impulse across centuries and mediums, juxtaposing the durable, atmospheric spaces of Caillebotte and Van Gogh with the delicate, light-sensitive structural studies of Piranesi, Sullivan, and Wright. By pairing these works symmetrically across the gallery's three walls, the layout balances the robust presence of oil on canvas (lux 200) with the intimate, precise line work of etchings and graphite (lux 50). The generous spacing—utilizing only 210cm of the 420cm North Wall for the oils, and roughly 100cm on the 360cm East and West walls for the works on paper—allows each pairing to breathe, highlighting the evolution of architectural representation from romanticized ruins to modernist geometry."
+  }
+}

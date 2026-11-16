@@ -1,0 +1,63 @@
+{
+  "hash": "e59042e6036907bbc71c7e68d4bc08fd92faee73872ac9b229b0ac08eb5cc583",
+  "role": "repair_critic",
+  "model": "gemini-3.8-flash",
+  "recordedAt": "2026-11-14T16:48:38.041Z",
+  "usage": {
+    "promptTokens": 3353,
+    "outputTokens": 675,
+    "totalTokens": 6382
+  },
+  "payload": {
+    "repairs": [
+      {
+        "issueId": "issue-placard-gap-mnt-wall-north-aic-16568",
+        "mountId": "mnt-wall-north-aic-16568",
+        "targetCenterY_cm": 145,
+        "targetSpotLux": 170,
+        "targetFontHeight_mm": 28
+      },
+      {
+        "issueId": "issue-placard-gap-mnt-wall-north-aic-81539",
+        "mountId": "mnt-wall-north-aic-81539",
+        "targetCenterY_cm": 145,
+        "targetSpotLux": 170,
+        "targetFontHeight_mm": 28
+      },
+      {
+        "issueId": "issue-placard-gap-mnt-wall-west-aic-109439",
+        "mountId": "mnt-wall-west-aic-109439",
+        "targetCenterY_cm": 145,
+        "targetSpotLux": 45,
+        "targetFontHeight_mm": 28
+      },
+      {
+        "issueId": "issue-placard-gap-mnt-wall-west-aic-151363",
+        "mountId": "mnt-wall-west-aic-151363",
+        "targetCenterY_cm": 145,
+        "targetSpotLux": 45,
+        "targetFontHeight_mm": 28
+      },
+      {
+        "issueId": "issue-placard-gap-mnt-wall-east-aic-118742",
+        "mountId": "mnt-wall-east-aic-118742",
+        "targetCenterY_cm": 145,
+        "targetSpotLux": 45,
+        "targetFontHeight_mm": 28
+      },
+      {
+        "issueId": "issue-placard-gap-mnt-wall-east-aic-137810",
+        "mountId": "mnt-wall-east-aic-137810",
+        "targetCenterY_cm": 145,
+        "targetSpotLux": 45,
+        "targetFontHeight_mm": 28
+      }
+    ],
+    "wallsToReflow": [
+      "wall-north",
+      "wall-west",
+      "wall-east"
+    ],
+    "criticSummary": "Reflowed wall-north, wall-west, and wall-east with an 18 cm clearance gap to resolve all frame overlaps, and corrected placard placement, vertical centerlines (145 cm), font sizes (28 mm), and conservation illuminance limits across all affected mounts."
+  }
+}

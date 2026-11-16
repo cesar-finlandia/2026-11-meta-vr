@@ -1,0 +1,19 @@
+{
+  "hash": "e780aa0fdeca00ce8089a4bbc7f09f5f9dce54c6be4ebeab89563f208330ed80",
+  "role": "repair_critic",
+  "model": "gemini-3.8-flash",
+  "recordedAt": "2026-11-14T16:48:55.045Z",
+  "usage": {
+    "promptTokens": 1967,
+    "outputTokens": 49,
+    "totalTokens": 4223
+  },
+  "payload": {
+    "repairs": [],
+    "wallsToReflow": [
+      "wall-north",
+      "wall-west"
+    ],
+    "criticSummary": "Reflowing wall-north and wall-west with minimum gap of 18 cm to resolve frame and placard wall boundary clearance violations."
+  }
+}

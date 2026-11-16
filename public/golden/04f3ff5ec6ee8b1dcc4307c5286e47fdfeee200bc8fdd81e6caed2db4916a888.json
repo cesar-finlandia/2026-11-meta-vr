@@ -1,0 +1,30 @@
+{
+  "hash": "04f3ff5ec6ee8b1dcc4307c5286e47fdfeee200bc8fdd81e6caed2db4916a888",
+  "role": "interpretive_writer",
+  "model": "gemini-2.5-flash",
+  "recordedAt": "2026-11-15T21:41:07.518Z",
+  "usage": {
+    "promptTokens": 506,
+    "outputTokens": 311,
+    "totalTokens": 1659
+  },
+  "payload": {
+    "placards": [
+      {
+        "mountId": "mnt-wall-west-aic-14598",
+        "curatorialNote": "This oil on canvas captures a distinct architectural moment in 19th-century Paris. Caillebotte uses a strong diagonal composition to draw the eye down the wide, wet boulevard. The precise rendering of buildings and figures under umbrellas highlights the city's structured elegance, connecting directly to the exhibition's architectural theme. The scene feels both grand and intimately human.",
+        "fontHeight_mm": 28
+      },
+      {
+        "mountId": "mnt-wall-west-aic-111442",
+        "curatorialNote": "In this oil on canvas, Renoir presents two young women amidst a vibrant botanical setting. The loose brushwork captures the dappled light filtering through the lush greenery and flowers surrounding the terrace. This impressionistic scene emphasizes the beauty and abundance of nature, reflecting the exhibition's botanical focus through its rich, organic forms and lively color palette.",
+        "fontHeight_mm": 28
+      },
+      {
+        "mountId": "mnt-wall-north-aic-102611",
+        "curatorialNote": "Monet's oil on canvas captures a dynamic coastal scene. The painting features two figures on a cliff path, surrounded by windswept grasses and vibrant wildflowers. His energetic brushstrokes convey the movement of the sea and the lively botanical elements of the landscape. This work beautifully illustrates the exhibition's botanical theme by celebrating nature's wild, untamed beauty.",
+        "fontHeight_mm": 28
+      }
+    ]
+  }
+}

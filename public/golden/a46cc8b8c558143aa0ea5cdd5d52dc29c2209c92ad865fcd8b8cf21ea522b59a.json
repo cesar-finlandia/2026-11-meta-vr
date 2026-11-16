@@ -1,0 +1,30 @@
+{
+  "hash": "a46cc8b8c558143aa0ea5cdd5d52dc29c2209c92ad865fcd8b8cf21ea522b59a",
+  "role": "interpretive_writer",
+  "model": "gemini-2.5-flash",
+  "recordedAt": "2026-11-15T21:37:58.909Z",
+  "usage": {
+    "promptTokens": 528,
+    "outputTokens": 363,
+    "totalTokens": 1736
+  },
+  "payload": {
+    "placards": [
+      {
+        "mountId": "mnt-wall-north-aic-80607",
+        "curatorialNote": "This six-panel screen study uses ink, color, and gold on paper to depict vibrant irises. The composition features bold, rhythmic curves of the flowers and leaves, creating a decorative pattern that repeats across the panels. This artwork celebrates the beauty of nature, transforming a botanical subject into a powerful, almost architectural, design element that shapes the viewing space.",
+        "fontHeight_mm": 28
+      },
+      {
+        "mountId": "mnt-wall-north-aic-93798",
+        "curatorialNote": "This album leaf, rendered in ink and color on paper, presents a delicate study of a white peony and bamboo. The artist uses precise brushwork to capture the plants' natural forms, emphasizing their individual characteristics. This botanical work highlights the intricate beauty of flora, often cultivated and arranged within designed landscapes, connecting natural growth with human-made architectural spaces.",
+        "fontHeight_mm": 28
+      },
+      {
+        "mountId": "mnt-wall-west-aic-24645",
+        "curatorialNote": "This polychrome woodblock print, made with ink and color on paper, captures a colossal wave threatening small boats. The dynamic composition uses strong curves and diagonals to convey immense power, with distant Mount Fuji providing a stable counterpoint. The wave's imposing, almost structural form, alongside the human-made vessels, powerfully connects natural forces with architectural elements.",
+        "fontHeight_mm": 28
+      }
+    ]
+  }
+}

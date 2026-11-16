@@ -1,0 +1,45 @@
+{
+  "hash": "6f79880c50788a9850302f78c71012505c4b0607dbdf7bf228a66c4252a87b86",
+  "role": "repair_critic",
+  "model": "gemini-2.5-flash",
+  "recordedAt": "2026-11-15T21:37:50.431Z",
+  "usage": {
+    "promptTokens": 1705,
+    "outputTokens": 470,
+    "totalTokens": 3300
+  },
+  "payload": {
+    "repairs": [
+      {
+        "issueId": "issue-ada-pitch-mnt-wall-north-aic-80607",
+        "mountId": "mnt-wall-north-aic-80607",
+        "targetCenterY_cm": 145,
+        "targetSpotLux": 45,
+        "targetFontHeight_mm": 28
+      },
+      {
+        "issueId": "issue-centerline-mnt-wall-north-aic-80607",
+        "mountId": "mnt-wall-north-aic-80607",
+        "targetCenterY_cm": 145,
+        "targetSpotLux": 45,
+        "targetFontHeight_mm": 28
+      },
+      {
+        "issueId": "issue-placard-height-mnt-wall-north-aic-80607",
+        "mountId": "mnt-wall-north-aic-80607",
+        "targetCenterY_cm": 145,
+        "targetSpotLux": 45,
+        "targetFontHeight_mm": 28
+      },
+      {
+        "issueId": "issue-cci-lux-mnt-wall-north-aic-80607",
+        "mountId": "mnt-wall-north-aic-80607",
+        "targetCenterY_cm": 145,
+        "targetSpotLux": 45,
+        "targetFontHeight_mm": 28
+      }
+    ],
+    "wallsToReflow": [],
+    "criticSummary": "Adjusted 'Irises' (mnt-wall-north-aic-80607) to a centerline of 145 cm to resolve ADA pitch and centerline band violations. Reduced its spotlight illuminance to 45 lux for conservation compliance. Set placard font height to 28 mm and placard center to 130 cm for legibility and placement."
+  }
+}

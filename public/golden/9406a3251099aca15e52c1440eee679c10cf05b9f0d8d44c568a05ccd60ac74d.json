@@ -1,0 +1,25 @@
+{
+  "hash": "9406a3251099aca15e52c1440eee679c10cf05b9f0d8d44c568a05ccd60ac74d",
+  "role": "curatorial_planner",
+  "model": "gemini-3.1-pro-preview",
+  "recordedAt": "2026-11-14T16:51:00.003Z",
+  "usage": {
+    "promptTokens": 2002,
+    "outputTokens": 311,
+    "totalTokens": 4001
+  },
+  "payload": {
+    "exhibitionTitle": "Visions of Light: Impressionist Color and Scale",
+    "theme": "impressionist",
+    "selectedArtworkIds": [
+      "aic-27992",
+      "aic-14598",
+      "aic-16568",
+      "aic-111442",
+      "aic-102611",
+      "aic-72819"
+    ],
+    "layoutTemplate": "salon_cluster",
+    "curatorialRationale": "This exhibition explores the dynamic interplay of color and scale within the Impressionist movement. By juxtaposing monumental, durable oil paintings like Seurat's 'La Grande Jatte' (124cm wide) and Caillebotte's 'Paris Street; Rainy Day' (118cm wide) with more intimate works, the curation establishes a varied visual rhythm. Crucially, the inclusion of Sargent's 'Terrace Arcade at Venice' introduces a delicate, light-sensitive work on paper (luxCap: 50) to contrast with the robust canvases (luxCap: 200). The total width of these 6 works is 533cm, which, when distributed across the North (420cm), West (360cm), and East (360cm) walls, guarantees generous breathing room and optimal spatial pacing for each piece."
+  }
+}

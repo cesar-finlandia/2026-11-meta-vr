@@ -1,0 +1,30 @@
+{
+  "hash": "9bc933a4ec5f67a0c573a0a3b917aa7151eab4fdcbcf96d34334d5781be5ad37",
+  "role": "interpretive_writer",
+  "model": "gemini-2.5-flash",
+  "recordedAt": "2026-11-15T21:44:33.484Z",
+  "usage": {
+    "promptTokens": 504,
+    "outputTokens": 369,
+    "totalTokens": 1734
+  },
+  "payload": {
+    "placards": [
+      {
+        "mountId": "mnt-wall-north-aic-16568",
+        "curatorialNote": "Monet's oil on canvas captures the fleeting light on water lilies. Loose brushstrokes create a vibrant, textured surface where sky and reflections merge. The composition, a close-up view, emphasizes the organic forms of the plants. This work exemplifies the botanical theme, inviting viewers to immerse themselves in nature's ephemeral beauty and the interplay of light on natural structures.",
+        "fontHeight_mm": 28
+      },
+      {
+        "mountId": "mnt-wall-north-aic-111442",
+        "curatorialNote": "Renoir’s oil on canvas portrays two figures framed by a vibrant, botanical setting. Soft brushstrokes render the lush foliage and flowers, creating a sense of depth behind the structured terrace. This work beautifully combines architectural elements with abundant natural forms, highlighting the harmonious relationship between human-made spaces and the surrounding garden landscape, central to our theme.",
+        "fontHeight_mm": 28
+      },
+      {
+        "mountId": "mnt-wall-west-aic-109439",
+        "curatorialNote": "Redouté’s stipple engraving on paper meticulously details a Magnolia Grandiflora. Precise dots of color build the flower's delicate petals and rich green leaves, showcasing botanical accuracy. The composition isolates the plant, emphasizing its inherent structure and beauty. This work exemplifies the botanical theme through its focused study of a single, magnificent natural form, revealing its intricate design.",
+        "fontHeight_mm": 28
+      }
+    ]
+  }
+}

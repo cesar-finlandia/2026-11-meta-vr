@@ -1,0 +1,45 @@
+{
+  "hash": "818b2baf25d5efa219a97f610d832b70261173e7e10cf0f82e5b8c5259aee1e0",
+  "role": "repair_critic",
+  "model": "gemini-2.5-flash",
+  "recordedAt": "2026-11-15T21:42:44.034Z",
+  "usage": {
+    "promptTokens": 1730,
+    "outputTokens": 453,
+    "totalTokens": 5904
+  },
+  "payload": {
+    "repairs": [
+      {
+        "issueId": "issue-ada-pitch-mnt-wall-north-aic-53672",
+        "mountId": "mnt-wall-north-aic-53672",
+        "targetCenterY_cm": 145,
+        "targetSpotLux": 45,
+        "targetFontHeight_mm": 28
+      },
+      {
+        "issueId": "issue-centerline-mnt-wall-north-aic-53672",
+        "mountId": "mnt-wall-north-aic-53672",
+        "targetCenterY_cm": 145,
+        "targetSpotLux": 45,
+        "targetFontHeight_mm": 28
+      },
+      {
+        "issueId": "issue-placard-height-mnt-wall-north-aic-53672",
+        "mountId": "mnt-wall-north-aic-53672",
+        "targetCenterY_cm": 145,
+        "targetSpotLux": 45,
+        "targetFontHeight_mm": 28
+      },
+      {
+        "issueId": "issue-cci-lux-mnt-wall-north-aic-53672",
+        "mountId": "mnt-wall-north-aic-53672",
+        "targetCenterY_cm": 145,
+        "targetSpotLux": 45,
+        "targetFontHeight_mm": 28
+      }
+    ],
+    "wallsToReflow": [],
+    "criticSummary": "Adjusted mount 'mnt-wall-north-aic-53672' to meet ADA pitch, centerline, placard placement, and conservation lux standards by setting center Y to 145 cm, spot lux to 45, and placard font height to 28 mm."
+  }
+}

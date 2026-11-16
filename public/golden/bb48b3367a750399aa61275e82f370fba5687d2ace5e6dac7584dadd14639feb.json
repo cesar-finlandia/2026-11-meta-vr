@@ -1,0 +1,25 @@
+{
+  "hash": "bb48b3367a750399aa61275e82f370fba5687d2ace5e6dac7584dadd14639feb",
+  "role": "curatorial_planner",
+  "model": "gemini-3.1-pro-preview",
+  "recordedAt": "2026-11-14T16:48:02.920Z",
+  "usage": {
+    "promptTokens": 2003,
+    "outputTokens": 277,
+    "totalTokens": 3939
+  },
+  "payload": {
+    "exhibitionTitle": "Nature Abstracted: Botanical Prints and Modernist Form",
+    "theme": "botanical",
+    "selectedArtworkIds": [
+      "aic-109439",
+      "aic-81539",
+      "aic-16568",
+      "aic-118742",
+      "aic-151363",
+      "aic-137810"
+    ],
+    "layoutTemplate": "chronological_spine",
+    "curatorialRationale": "This exhibition traces the structural evolution of botanical imagery from precise naturalistic prints to abstracted modernist forms. The selection balances delicate, light-sensitive works on paper (luxCap: 50), such as Redouté's classic engraving and Sullivan's organic architectural lithograph, with durable, robust oils (luxCap: 200) by Cézanne and Monet. Arranged along a chronological spine, the layout distributes the combined widths of these works efficiently across the North, West, and East walls, ensuring generous breathing room well within the 360cm and 420cm limits. This spatial pacing allows viewers to appreciate the gradual distillation of organic flora into geometric and expressive modernism."
+  }
+}

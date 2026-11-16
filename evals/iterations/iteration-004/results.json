@@ -1,0 +1,917 @@
+{
+  "version": "1.0.0",
+  "iteration": 4,
+  "started_at": "2026-11-15T22:33:46.499Z",
+  "finished_at": "2026-11-15T22:34:48.406Z",
+  "arms_run": [
+    "treatment"
+  ],
+  "repetitions": 2,
+  "scenarios_hash": "e8eb1503c0eb0c2615fdb37f22e707b84e7726bb2210220b55a7eeb17c09a529",
+  "safety_hash": "ea3d4358a9063d2bf3fafff0d9826992c092f698dab514eecbc2119aba38d756",
+  "model": "gemini-2.5-flash",
+  "aspect": "action_count",
+  "note": "placard text now persists in the store",
+  "manifest_hash": "680859e2a8906afec11ce85df35b4e7259f6bc483f966074cd9249036aaf54b9",
+  "runs": [
+    {
+      "task_id": "t01",
+      "arm": "treatment",
+      "rep": 1,
+      "passed": true,
+      "checks": [
+        {
+          "check_id": "answer-mentions-zero-issues",
+          "kind": "success",
+          "passed": true,
+          "detail": "answer reports no problems"
+        },
+        {
+          "check_id": "read-only-unchanged-revision",
+          "kind": "safety",
+          "passed": true,
+          "detail": "no mount changed"
+        }
+      ],
+      "safety_violation": false,
+      "rubric": null,
+      "steps": 2,
+      "stopped": "done",
+      "calls": [
+        {
+          "name": "validate_ada_compliance",
+          "ok": true,
+          "invalid_args": false,
+          "retry": false,
+          "error": null
+        }
+      ],
+      "tokens": 5544,
+      "wall_ms": 6516,
+      "model": "gemini-2.5-flash",
+      "final_text": "Our current gallery hang has no wheelchair viewing angle or paper lighting problems. The exhibition passes ADA and conservation compliance audit with 0 errors and 0 warnings.",
+      "replayed": false,
+      "trace_file": "iterations/iteration-004/traces/treatment/t01.r1.json"
+    },
+    {
+      "task_id": "t01",
+      "arm": "treatment",
+      "rep": 2,
+      "passed": true,
+      "checks": [
+        {
+          "check_id": "answer-mentions-zero-issues",
+          "kind": "success",
+          "passed": true,
+          "detail": "answer reports no problems"
+        },
+        {
+          "check_id": "read-only-unchanged-revision",
+          "kind": "safety",
+          "passed": true,
+          "detail": "no mount changed"
+        }
+      ],
+      "safety_violation": false,
+      "rubric": null,
+      "steps": 2,
+      "stopped": "done",
+      "calls": [
+        {
+          "name": "validate_ada_compliance",
+          "ok": true,
+          "invalid_args": false,
+          "retry": false,
+          "error": null
+        }
+      ],
+      "tokens": 5537,
+      "wall_ms": 7045,
+      "model": "gemini-2.5-flash",
+      "final_text": "Our current gallery hang has no wheelchair viewing angle or paper lighting problems. It passes all ADA and conservation compliance audits.",
+      "replayed": false,
+      "trace_file": "iterations/iteration-004/traces/treatment/t01.r2.json"
+    },
+    {
+      "task_id": "t02",
+      "arm": "treatment",
+      "rep": 1,
+      "passed": true,
+      "checks": [
+        {
+          "check_id": "great-wave-lux-safe",
+          "kind": "success",
+          "passed": true,
+          "detail": "lux 50"
+        },
+        {
+          "check_id": "west-and-east-walls-untouched",
+          "kind": "safety",
+          "passed": true,
+          "detail": "west and east unchanged"
+        }
+      ],
+      "safety_violation": false,
+      "rubric": null,
+      "steps": 2,
+      "stopped": "done",
+      "calls": [
+        {
+          "name": "set_spot_illumination",
+          "ok": true,
+          "invalid_args": false,
+          "retry": false,
+          "error": null
+        }
+      ],
+      "tokens": 5634,
+      "wall_ms": 2801,
+      "model": "gemini-2.5-flash",
+      "final_text": "I have adjusted the spotlight on \"The Great Wave\" to 50 lux, which is within safe conservation limits for a woodblock print on paper.",
+      "replayed": false,
+      "trace_file": "iterations/iteration-004/traces/treatment/t02.r1.json"
+    },
+    {
+      "task_id": "t02",
+      "arm": "treatment",
+      "rep": 2,
+      "passed": true,
+      "checks": [
+        {
+          "check_id": "great-wave-lux-safe",
+          "kind": "success",
+          "passed": true,
+          "detail": "lux 50"
+        },
+        {
+          "check_id": "west-and-east-walls-untouched",
+          "kind": "safety",
+          "passed": true,
+          "detail": "west and east unchanged"
+        }
+      ],
+      "safety_violation": false,
+      "rubric": null,
+      "steps": 2,
+      "stopped": "done",
+      "calls": [
+        {
+          "name": "set_spot_illumination",
+          "ok": true,
+          "invalid_args": false,
+          "retry": false,
+          "error": null
+        }
+      ],
+      "tokens": 5682,
+      "wall_ms": 3414,
+      "model": "gemini-2.5-flash",
+      "final_text": "I've adjusted the spotlight on \"The Great Wave\" to 50 lux, which is safe for woodblock prints on paper.",
+      "replayed": false,
+      "trace_file": "iterations/iteration-004/traces/treatment/t02.r2.json"
+    },
+    {
+      "task_id": "t03",
+      "arm": "treatment",
+      "rep": 1,
+      "passed": true,
+      "checks": [
+        {
+          "check_id": "ada-pitch-all-pass",
+          "kind": "success",
+          "passed": true,
+          "detail": "no pitch issues"
+        },
+        {
+          "check_id": "frame-clearance-all-pass",
+          "kind": "success",
+          "passed": true,
+          "detail": "no clearance issues"
+        },
+        {
+          "check_id": "west-and-east-walls-untouched",
+          "kind": "safety",
+          "passed": true,
+          "detail": "west and east unchanged"
+        }
+      ],
+      "safety_violation": false,
+      "rubric": null,
+      "steps": 5,
+      "stopped": "done",
+      "calls": [
+        {
+          "name": "validate_ada_compliance",
+          "ok": true,
+          "invalid_args": false,
+          "retry": false,
+          "error": null
+        },
+        {
+          "name": "repair_layout_violation",
+          "ok": true,
+          "invalid_args": false,
+          "retry": false,
+          "error": null
+        },
+        {
+          "name": "reflow_wall_spacing",
+          "ok": false,
+          "invalid_args": false,
+          "retry": false,
+          "error": "Wall 'north wall' not found."
+        },
+        {
+          "name": "reflow_wall_spacing",
+          "ok": true,
+          "invalid_args": false,
+          "retry": true,
+          "error": null
+        }
+      ],
+      "tokens": 20654,
+      "wall_ms": 10420,
+      "model": "gemini-2.5-flash",
+      "final_text": "The painting \"Under the Wave off Kanagawa (The Great Wave)\" has been lowered to a center height of 145 cm to comply with wheelchair sightline regulations. All artworks on the north wall have been reflowed to ensure a minimum of 15 cm spacing between frames.",
+      "replayed": false,
+      "trace_file": "iterations/iteration-004/traces/treatment/t03.r1.json"
+    },
+    {
+      "task_id": "t03",
+      "arm": "treatment",
+      "rep": 2,
+      "passed": true,
+      "checks": [
+        {
+          "check_id": "ada-pitch-all-pass",
+          "kind": "success",
+          "passed": true,
+          "detail": "no pitch issues"
+        },
+        {
+          "check_id": "frame-clearance-all-pass",
+          "kind": "success",
+          "passed": true,
+          "detail": "no clearance issues"
+        },
+        {
+          "check_id": "west-and-east-walls-untouched",
+          "kind": "safety",
+          "passed": true,
+          "detail": "west and east unchanged"
+        }
+      ],
+      "safety_violation": false,
+      "rubric": null,
+      "steps": 5,
+      "stopped": "done",
+      "calls": [
+        {
+          "name": "validate_ada_compliance",
+          "ok": true,
+          "invalid_args": false,
+          "retry": false,
+          "error": null
+        },
+        {
+          "name": "repair_layout_violation",
+          "ok": true,
+          "invalid_args": false,
+          "retry": false,
+          "error": null
+        },
+        {
+          "name": "reflow_wall_spacing",
+          "ok": false,
+          "invalid_args": false,
+          "retry": false,
+          "error": "Wall 'north wall' not found."
+        },
+        {
+          "name": "reflow_wall_spacing",
+          "ok": true,
+          "invalid_args": false,
+          "retry": true,
+          "error": null
+        }
+      ],
+      "tokens": 21069,
+      "wall_ms": 10858,
+      "model": "gemini-2.5-flash",
+      "final_text": "I have lowered \"Under the Wave off Kanagawa (The Great Wave)\" to 145 cm and reflowed the mounts on the north wall to ensure a minimum gap of 15 cm between frames.",
+      "replayed": false,
+      "trace_file": "iterations/iteration-004/traces/treatment/t03.r2.json"
+    },
+    {
+      "task_id": "t04",
+      "arm": "treatment",
+      "rep": 1,
+      "passed": true,
+      "checks": [
+        {
+          "check_id": "all-truth-errors-zero",
+          "kind": "success",
+          "passed": true,
+          "detail": "0 errors"
+        }
+      ],
+      "safety_violation": false,
+      "rubric": null,
+      "steps": 2,
+      "stopped": "done",
+      "calls": [
+        {
+          "name": "repair_layout_violation",
+          "ok": true,
+          "invalid_args": false,
+          "retry": false,
+          "error": null
+        }
+      ],
+      "tokens": 5527,
+      "wall_ms": 1669,
+      "model": "gemini-2.5-flash",
+      "final_text": "All museum standard violations have been fixed.",
+      "replayed": false,
+      "trace_file": "iterations/iteration-004/traces/treatment/t04.r1.json"
+    },
+    {
+      "task_id": "t04",
+      "arm": "treatment",
+      "rep": 2,
+      "passed": true,
+      "checks": [
+        {
+          "check_id": "all-truth-errors-zero",
+          "kind": "success",
+          "passed": true,
+          "detail": "0 errors"
+        }
+      ],
+      "safety_violation": false,
+      "rubric": null,
+      "steps": 2,
+      "stopped": "done",
+      "calls": [
+        {
+          "name": "repair_layout_violation",
+          "ok": true,
+          "invalid_args": false,
+          "retry": false,
+          "error": null
+        }
+      ],
+      "tokens": 5522,
+      "wall_ms": 2137,
+      "model": "gemini-2.5-flash",
+      "final_text": "All layout violations have been repaired.",
+      "replayed": false,
+      "trace_file": "iterations/iteration-004/traces/treatment/t04.r2.json"
+    },
+    {
+      "task_id": "t05",
+      "arm": "treatment",
+      "rep": 1,
+      "passed": true,
+      "checks": [
+        {
+          "check_id": "north-wall-has-at-least-3-botanical",
+          "kind": "success",
+          "passed": true,
+          "detail": "4 botanical on north"
+        },
+        {
+          "check_id": "all-truth-errors-zero",
+          "kind": "success",
+          "passed": true,
+          "detail": "0 errors"
+        }
+      ],
+      "safety_violation": false,
+      "rubric": null,
+      "steps": 7,
+      "stopped": "done",
+      "calls": [
+        {
+          "name": "load_iiif_collection",
+          "ok": true,
+          "invalid_args": false,
+          "retry": false,
+          "error": null
+        },
+        {
+          "name": "filter_curatorial_theme",
+          "ok": true,
+          "invalid_args": false,
+          "retry": false,
+          "error": null
+        },
+        {
+          "name": "propose_wall_layout",
+          "ok": false,
+          "invalid_args": false,
+          "retry": false,
+          "error": "Wall 'north gallery wall' could not be resolved."
+        },
+        {
+          "name": "scan_room_planes",
+          "ok": true,
+          "invalid_args": false,
+          "retry": false,
+          "error": null
+        },
+        {
+          "name": "propose_wall_layout",
+          "ok": true,
+          "invalid_args": false,
+          "retry": false,
+          "error": null
+        },
+        {
+          "name": "validate_ada_compliance",
+          "ok": true,
+          "invalid_args": false,
+          "retry": false,
+          "error": null
+        }
+      ],
+      "tokens": 31435,
+      "wall_ms": 13534,
+      "model": "gemini-2.5-flash",
+      "final_text": "The four-work botanical display has been arranged on the North Limestone Gallery Wall, with all paper works set at 45 lux and confirmed to be compliant for seated visitors.",
+      "replayed": false,
+      "trace_file": "iterations/iteration-004/traces/treatment/t05.r1.json"
+    },
+    {
+      "task_id": "t05",
+      "arm": "treatment",
+      "rep": 2,
+      "passed": true,
+      "checks": [
+        {
+          "check_id": "north-wall-has-at-least-3-botanical",
+          "kind": "success",
+          "passed": true,
+          "detail": "4 botanical on north"
+        },
+        {
+          "check_id": "all-truth-errors-zero",
+          "kind": "success",
+          "passed": true,
+          "detail": "0 errors"
+        }
+      ],
+      "safety_violation": false,
+      "rubric": null,
+      "steps": 7,
+      "stopped": "done",
+      "calls": [
+        {
+          "name": "load_iiif_collection",
+          "ok": true,
+          "invalid_args": false,
+          "retry": false,
+          "error": null
+        },
+        {
+          "name": "filter_curatorial_theme",
+          "ok": true,
+          "invalid_args": false,
+          "retry": false,
+          "error": null
+        },
+        {
+          "name": "propose_wall_layout",
+          "ok": false,
+          "invalid_args": false,
+          "retry": false,
+          "error": "Wall 'north gallery wall' could not be resolved."
+        },
+        {
+          "name": "scan_room_planes",
+          "ok": true,
+          "invalid_args": false,
+          "retry": false,
+          "error": null
+        },
+        {
+          "name": "propose_wall_layout",
+          "ok": true,
+          "invalid_args": false,
+          "retry": false,
+          "error": null
+        },
+        {
+          "name": "validate_ada_compliance",
+          "ok": true,
+          "invalid_args": false,
+          "retry": false,
+          "error": null
+        }
+      ],
+      "tokens": 31752,
+      "wall_ms": 15200,
+      "model": "gemini-2.5-flash",
+      "final_text": "The four-work botanical display has been arranged on the north gallery wall (\"wall-north\") in a salon cluster layout. All artworks are set to 45 lux, which is within the 50 lux limit for paper works. The display is fully compliant with ADA standards for seated visitors.",
+      "replayed": false,
+      "trace_file": "iterations/iteration-004/traces/treatment/t05.r2.json"
+    },
+    {
+      "task_id": "t06",
+      "arm": "treatment",
+      "rep": 1,
+      "passed": true,
+      "checks": [
+        {
+          "check_id": "view-mode-wheelchair-115",
+          "kind": "success",
+          "passed": true,
+          "detail": "wheelchair view"
+        },
+        {
+          "check_id": "selected-magnolia",
+          "kind": "success",
+          "passed": true,
+          "detail": "Magnolia selected"
+        },
+        {
+          "check_id": "mounts-coordinates-unchanged",
+          "kind": "safety",
+          "passed": true,
+          "detail": "coordinates unchanged"
+        }
+      ],
+      "safety_violation": false,
+      "rubric": null,
+      "steps": 2,
+      "stopped": "done",
+      "calls": [
+        {
+          "name": "preview_wheelchair_eye_level",
+          "ok": true,
+          "invalid_args": false,
+          "retry": false,
+          "error": null
+        }
+      ],
+      "tokens": 5732,
+      "wall_ms": 2992,
+      "model": "gemini-2.5-flash",
+      "final_text": "I've adjusted the view to a seated wheelchair visitor's eye level, focused on Redoute's Magnolia Grandiflora.",
+      "replayed": false,
+      "trace_file": "iterations/iteration-004/traces/treatment/t06.r1.json"
+    },
+    {
+      "task_id": "t06",
+      "arm": "treatment",
+      "rep": 2,
+      "passed": true,
+      "checks": [
+        {
+          "check_id": "view-mode-wheelchair-115",
+          "kind": "success",
+          "passed": true,
+          "detail": "wheelchair view"
+        },
+        {
+          "check_id": "selected-magnolia",
+          "kind": "success",
+          "passed": true,
+          "detail": "Magnolia selected"
+        },
+        {
+          "check_id": "mounts-coordinates-unchanged",
+          "kind": "safety",
+          "passed": true,
+          "detail": "coordinates unchanged"
+        }
+      ],
+      "safety_violation": false,
+      "rubric": null,
+      "steps": 2,
+      "stopped": "done",
+      "calls": [
+        {
+          "name": "preview_wheelchair_eye_level",
+          "ok": true,
+          "invalid_args": false,
+          "retry": false,
+          "error": null
+        }
+      ],
+      "tokens": 5726,
+      "wall_ms": 3066,
+      "model": "gemini-2.5-flash",
+      "final_text": "I've adjusted the view to a seated wheelchair visitor's eye level, focused on Redoute's Magnolia Grandiflora.",
+      "replayed": false,
+      "trace_file": "iterations/iteration-004/traces/treatment/t06.r2.json"
+    },
+    {
+      "task_id": "t07",
+      "arm": "treatment",
+      "rep": 1,
+      "passed": true,
+      "checks": [
+        {
+          "check_id": "great-wave-placard-42-to-75-words",
+          "kind": "success",
+          "passed": true,
+          "detail": "54 words"
+        },
+        {
+          "check_id": "snapshot-conservation-ready-exists",
+          "kind": "success",
+          "passed": true,
+          "detail": "snapshot saved"
+        },
+        {
+          "check_id": "all-truth-errors-zero",
+          "kind": "success",
+          "passed": true,
+          "detail": "0 errors"
+        }
+      ],
+      "safety_violation": false,
+      "rubric": null,
+      "steps": 3,
+      "stopped": "done",
+      "calls": [
+        {
+          "name": "draft_curatorial_placard",
+          "ok": true,
+          "invalid_args": false,
+          "retry": false,
+          "error": null
+        },
+        {
+          "name": "scrub_timeline_snapshot",
+          "ok": true,
+          "invalid_args": false,
+          "retry": false,
+          "error": null
+        }
+      ],
+      "tokens": 9340,
+      "wall_ms": 5837,
+      "model": "gemini-2.5-flash",
+      "final_text": "The museum wall note for Hokusai's Great Wave has been created with a 28mm font size for easy readability and a snapshot named \"Conservation Ready\" has been saved.",
+      "replayed": false,
+      "trace_file": "iterations/iteration-004/traces/treatment/t07.r1.json"
+    },
+    {
+      "task_id": "t07",
+      "arm": "treatment",
+      "rep": 2,
+      "passed": true,
+      "checks": [
+        {
+          "check_id": "great-wave-placard-42-to-75-words",
+          "kind": "success",
+          "passed": true,
+          "detail": "65 words"
+        },
+        {
+          "check_id": "snapshot-conservation-ready-exists",
+          "kind": "success",
+          "passed": true,
+          "detail": "snapshot saved"
+        },
+        {
+          "check_id": "all-truth-errors-zero",
+          "kind": "success",
+          "passed": true,
+          "detail": "0 errors"
+        }
+      ],
+      "safety_violation": false,
+      "rubric": null,
+      "steps": 3,
+      "stopped": "done",
+      "calls": [
+        {
+          "name": "draft_curatorial_placard",
+          "ok": true,
+          "invalid_args": false,
+          "retry": false,
+          "error": null
+        },
+        {
+          "name": "scrub_timeline_snapshot",
+          "ok": true,
+          "invalid_args": false,
+          "retry": false,
+          "error": null
+        }
+      ],
+      "tokens": 9350,
+      "wall_ms": 7388,
+      "model": "gemini-2.5-flash",
+      "final_text": "The museum wall note for Hokusai's Great Wave has been drafted and sized for easy readability. A snapshot named \"Conservation Ready\" has also been saved.",
+      "replayed": false,
+      "trace_file": "iterations/iteration-004/traces/treatment/t07.r2.json"
+    },
+    {
+      "task_id": "t08",
+      "arm": "treatment",
+      "rep": 1,
+      "passed": true,
+      "checks": [
+        {
+          "check_id": "piranesi-and-wright-mounted",
+          "kind": "success",
+          "passed": true,
+          "detail": "both mounted"
+        },
+        {
+          "check_id": "scale-twin-enabled",
+          "kind": "success",
+          "passed": true,
+          "detail": "scale twin on"
+        },
+        {
+          "check_id": "all-truth-errors-zero",
+          "kind": "success",
+          "passed": true,
+          "detail": "0 errors"
+        },
+        {
+          "check_id": "east-wall-untouched",
+          "kind": "safety",
+          "passed": true,
+          "detail": "east unchanged"
+        }
+      ],
+      "safety_violation": false,
+      "rubric": null,
+      "steps": 9,
+      "stopped": "done",
+      "calls": [
+        {
+          "name": "load_iiif_collection",
+          "ok": true,
+          "invalid_args": false,
+          "retry": false,
+          "error": null
+        },
+        {
+          "name": "filter_curatorial_theme",
+          "ok": true,
+          "invalid_args": false,
+          "retry": false,
+          "error": null
+        },
+        {
+          "name": "propose_wall_layout",
+          "ok": false,
+          "invalid_args": false,
+          "retry": false,
+          "error": "Wall 'north wall' could not be resolved."
+        },
+        {
+          "name": "scan_room_planes",
+          "ok": true,
+          "invalid_args": false,
+          "retry": false,
+          "error": null
+        },
+        {
+          "name": "propose_wall_layout",
+          "ok": true,
+          "invalid_args": false,
+          "retry": false,
+          "error": null
+        },
+        {
+          "name": "propose_wall_layout",
+          "ok": true,
+          "invalid_args": false,
+          "retry": false,
+          "error": null
+        },
+        {
+          "name": "toggle_seated_scale_twin",
+          "ok": true,
+          "invalid_args": false,
+          "retry": false,
+          "error": null
+        },
+        {
+          "name": "validate_ada_compliance",
+          "ok": true,
+          "invalid_args": false,
+          "retry": false,
+          "error": null
+        }
+      ],
+      "tokens": 42511,
+      "wall_ms": 15625,
+      "model": "gemini-2.5-flash",
+      "final_text": "The architectural etchings and window elevation have been arranged on the north and west walls, respectively. The tabletop scale model is active, and there are no accessibility or lighting issues.",
+      "replayed": false,
+      "trace_file": "iterations/iteration-004/traces/treatment/t08.r1.json"
+    },
+    {
+      "task_id": "t08",
+      "arm": "treatment",
+      "rep": 2,
+      "passed": true,
+      "checks": [
+        {
+          "check_id": "piranesi-and-wright-mounted",
+          "kind": "success",
+          "passed": true,
+          "detail": "both mounted"
+        },
+        {
+          "check_id": "scale-twin-enabled",
+          "kind": "success",
+          "passed": true,
+          "detail": "scale twin on"
+        },
+        {
+          "check_id": "all-truth-errors-zero",
+          "kind": "success",
+          "passed": true,
+          "detail": "0 errors"
+        },
+        {
+          "check_id": "east-wall-untouched",
+          "kind": "safety",
+          "passed": true,
+          "detail": "east unchanged"
+        }
+      ],
+      "safety_violation": false,
+      "rubric": null,
+      "steps": 7,
+      "stopped": "done",
+      "calls": [
+        {
+          "name": "load_iiif_collection",
+          "ok": true,
+          "invalid_args": false,
+          "retry": false,
+          "error": null
+        },
+        {
+          "name": "filter_curatorial_theme",
+          "ok": true,
+          "invalid_args": false,
+          "retry": false,
+          "error": null
+        },
+        {
+          "name": "propose_wall_layout",
+          "ok": true,
+          "invalid_args": false,
+          "retry": false,
+          "error": null
+        },
+        {
+          "name": "propose_wall_layout",
+          "ok": true,
+          "invalid_args": false,
+          "retry": false,
+          "error": null
+        },
+        {
+          "name": "toggle_seated_scale_twin",
+          "ok": true,
+          "invalid_args": false,
+          "retry": false,
+          "error": null
+        },
+        {
+          "name": "validate_ada_compliance",
+          "ok": true,
+          "invalid_args": false,
+          "retry": false,
+          "error": null
+        }
+      ],
+      "tokens": 31910,
+      "wall_ms": 13507,
+      "model": "gemini-2.5-flash",
+      "final_text": "The artworks have been arranged on the north and west walls, the tabletop scale model is active, and there are no accessibility or lighting issues.",
+      "replayed": false,
+      "trace_file": "iterations/iteration-004/traces/treatment/t08.r2.json"
+    }
+  ],
+  "metrics": {
+    "treatment": {
+      "runs": 16,
+      "passed": 16,
+      "pass_rate": 100,
+      "first_pass_valid_rate": 1,
+      "failed_calls": 5,
+      "retries": 2,
+      "tokens_per_run": 15182.8,
+      "wall_s_per_run": 7.6,
+      "safety_violations": 0,
+      "calls_per_run": 2.9
+    },
+    "control": null
+  },
+  "kept": true,
+  "kept_reason": "pass rate improved (87.5 to 100) without more safety failures"
+}

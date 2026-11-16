@@ -1,0 +1,187 @@
+{
+  "version": "1.0.0",
+  "generated_at": "2026-11-15T22:34:55.216Z",
+  "product": "Sightline Studio",
+  "scenarios_hash": "e8eb1503c0eb0c2615fdb37f22e707b84e7726bb2210220b55a7eeb17c09a529",
+  "tasks": 8,
+  "repetitions": 2,
+  "model": "gemini-2.5-flash",
+  "chosen_iteration": 4,
+  "control_iteration": 3,
+  "comparable": true,
+  "comparable_reasons": [],
+  "treatment": {
+    "runs": 16,
+    "passed": 16,
+    "pass_rate": 100,
+    "first_pass_valid_rate": 1,
+    "failed_calls": 5,
+    "retries": 2,
+    "tokens_per_run": 15182.8,
+    "wall_s_per_run": 7.6,
+    "safety_violations": 0,
+    "calls_per_run": 2.9
+  },
+  "control": {
+    "runs": 16,
+    "passed": 2,
+    "pass_rate": 12.5,
+    "first_pass_valid_rate": 0.8448,
+    "failed_calls": 40,
+    "retries": 30,
+    "tokens_per_run": 19830.1,
+    "wall_s_per_run": 23.9,
+    "safety_violations": 1,
+    "calls_per_run": 7.3
+  },
+  "per_task": [
+    {
+      "task_id": "t01",
+      "title": "Audit wheelchair viewing angles and lighting",
+      "treatment": {
+        "passed": 2,
+        "runs": 2
+      },
+      "control": {
+        "passed": 2,
+        "runs": 2
+      }
+    },
+    {
+      "task_id": "t02",
+      "title": "Dim over-lit woodblock print",
+      "treatment": {
+        "passed": 2,
+        "runs": 2
+      },
+      "control": {
+        "passed": 0,
+        "runs": 2
+      }
+    },
+    {
+      "task_id": "t03",
+      "title": "Lower high frame for seated visitors",
+      "treatment": {
+        "passed": 2,
+        "runs": 2
+      },
+      "control": {
+        "passed": 0,
+        "runs": 2
+      }
+    },
+    {
+      "task_id": "t04",
+      "title": "Full north wall compliance repair",
+      "treatment": {
+        "passed": 2,
+        "runs": 2
+      },
+      "control": {
+        "passed": 0,
+        "runs": 2
+      }
+    },
+    {
+      "task_id": "t05",
+      "title": "Curate botanical works on north wall",
+      "treatment": {
+        "passed": 2,
+        "runs": 2
+      },
+      "control": {
+        "passed": 0,
+        "runs": 2
+      }
+    },
+    {
+      "task_id": "t06",
+      "title": "Switch to wheelchair sightline preview on Magnolia",
+      "treatment": {
+        "passed": 2,
+        "runs": 2
+      },
+      "control": {
+        "passed": 0,
+        "runs": 2
+      }
+    },
+    {
+      "task_id": "t07",
+      "title": "Write accessible wall placard and save milestone",
+      "treatment": {
+        "passed": 2,
+        "runs": 2
+      },
+      "control": {
+        "passed": 0,
+        "runs": 2
+      }
+    },
+    {
+      "task_id": "t08",
+      "title": "Curate architectural study across two walls",
+      "treatment": {
+        "passed": 2,
+        "runs": 2
+      },
+      "control": {
+        "passed": 0,
+        "runs": 2
+      }
+    }
+  ],
+  "iterations": [
+    {
+      "n": 1,
+      "aspect": "baseline",
+      "note": "",
+      "pass_rate": 62.5,
+      "first_pass_valid_rate": 1,
+      "tokens_per_run": 22090.9,
+      "wall_s_per_run": 13.4,
+      "safety_violations": 0,
+      "kept": true
+    },
+    {
+      "n": 2,
+      "aspect": "descriptions",
+      "note": "repairAll and issueId repair, artist query on theme filter, placard word guidance",
+      "pass_rate": 87.5,
+      "first_pass_valid_rate": 1,
+      "tokens_per_run": 14723.8,
+      "wall_s_per_run": 8,
+      "safety_violations": 0,
+      "kept": true
+    },
+    {
+      "n": 3,
+      "aspect": "descriptions",
+      "note": "placard length guard, final comparison",
+      "pass_rate": 87.5,
+      "first_pass_valid_rate": 1,
+      "tokens_per_run": 14541.4,
+      "wall_s_per_run": 8.7,
+      "safety_violations": 0,
+      "kept": false
+    },
+    {
+      "n": 4,
+      "aspect": "action_count",
+      "note": "placard text now persists in the store",
+      "pass_rate": 100,
+      "first_pass_valid_rate": 1,
+      "tokens_per_run": 15182.8,
+      "wall_s_per_run": 7.6,
+      "safety_violations": 0,
+      "kept": true
+    }
+  ],
+  "sessions_used": 96,
+  "sessions_cap": 300,
+  "replayed": false,
+  "headline": "100.0% task success (16/16) with the product's action surface against 12.5% (2/16) with generic screen actions only; 15182.8 tokens and 7.6 s per try with the surface.",
+  "ceiling": "Measured on 8 frozen tasks, 2 repetitions each, with gemini-2.5-flash; this shows success on those tasks only.",
+  "caveats": []
+}

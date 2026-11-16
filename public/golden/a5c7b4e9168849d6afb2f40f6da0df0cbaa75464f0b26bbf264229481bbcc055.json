@@ -1,0 +1,30 @@
+{
+  "hash": "a5c7b4e9168849d6afb2f40f6da0df0cbaa75464f0b26bbf264229481bbcc055",
+  "role": "interpretive_writer",
+  "model": "gemini-3.8-flash",
+  "recordedAt": "2026-11-14T16:52:06.169Z",
+  "usage": {
+    "promptTokens": 450,
+    "outputTokens": 270,
+    "totalTokens": 2611
+  },
+  "payload": {
+    "placards": [
+      {
+        "mountId": "mount-aic-80607",
+        "curatorialNote": "Rendered in ink, vibrant color, and gold leaf on paper, this screen study features rhythmic clusters of irises. Vertical stalks and curved leaves establish a crisp visual cadence across warm metallic planes. Anchoring our botanical theme, the composition organizes living floral structures into balanced decorative forms that energize the open viewing space.",
+        "fontHeight_mm": 28
+      },
+      {
+        "mountId": "mnt-wall-north-aic-27992",
+        "curatorialNote": "Executed in oil on canvas using meticulous dots of paint, this landscape balances upright human silhouettes with spreading park trees. Seurat organizes sunlight and shadow through a calculated geometric grid. Highlighting both architectural discipline and botanical surroundings, the structured composition frames modern city life within a carefully planned natural public park.",
+        "fontHeight_mm": 28
+      },
+      {
+        "mountId": "mount-aic-24645",
+        "curatorialNote": "Produced as a polychrome woodblock print on paper, this work frames distant Mount Fuji beneath a towering, claw-like wave. Strong diagonal lines and layered blue tones anchor the low wooden boats. Connecting to our architectural theme, the curling water forms a vaulted, sheltering curve that frames the permanent geometry of the horizon.",
+        "fontHeight_mm": 28
+      }
+    ]
+  }
+}

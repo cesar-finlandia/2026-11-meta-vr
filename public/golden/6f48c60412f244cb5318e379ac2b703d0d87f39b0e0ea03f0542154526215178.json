@@ -1,0 +1,30 @@
+{
+  "hash": "6f48c60412f244cb5318e379ac2b703d0d87f39b0e0ea03f0542154526215178",
+  "role": "interpretive_writer",
+  "model": "gemini-3.8-flash",
+  "recordedAt": "2026-11-14T16:53:19.756Z",
+  "usage": {
+    "promptTokens": 439,
+    "outputTokens": 278,
+    "totalTokens": 2636
+  },
+  "payload": {
+    "placards": [
+      {
+        "mountId": "mount-aic-80607",
+        "curatorialNote": "Ogata Korin painted this screen study using ink, color, and gold on paper. Bold clusters of flowering stalks create an undulating visual rhythm across a luminous background. By eliminating horizon lines and architectural context, the composition spotlights pure botanical vitality, inviting viewers to explore organic growth as structural form within space.",
+        "fontHeight_mm": 28
+      },
+      {
+        "mountId": "mnt-wall-north-aic-28560",
+        "curatorialNote": "Vincent van Gogh applied oil on canvas with distinct, tactile brushstrokes to render his personal domestic sanctuary. The visual structure relies on steeply angled floorboards, paired chairs, and shuttered windows that enclose the room. This tight architectural interior balances structural stability with warm botanical touches in wood surfaces, grounding everyday geometry in deep emotion.",
+        "fontHeight_mm": 28
+      },
+      {
+        "mountId": "mount-aic-24645",
+        "curatorialNote": "Rendered as a polychrome woodblock print with ink and color on paper, this composition balances dynamic nature against human industry. A towering cresting swell frames distant Mount Fuji, using circular curves to enclose slender wooden boats. The visual structure contrasts organic, botanical-like wave crests with the rigid architectural lines of watercraft battling the ocean.",
+        "fontHeight_mm": 28
+      }
+    ]
+  }
+}

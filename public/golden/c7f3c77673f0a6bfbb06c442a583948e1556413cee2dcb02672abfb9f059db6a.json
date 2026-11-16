@@ -1,0 +1,26 @@
+{
+  "hash": "c7f3c77673f0a6bfbb06c442a583948e1556413cee2dcb02672abfb9f059db6a",
+  "role": "curatorial_planner",
+  "model": "gemini-2.5-pro",
+  "recordedAt": "2026-11-15T21:38:18.190Z",
+  "usage": {
+    "promptTokens": 2134,
+    "outputTokens": 253,
+    "totalTokens": 4444
+  },
+  "payload": {
+    "exhibitionTitle": "The Architect's Hand: Prints of Space and Form",
+    "theme": "architectural",
+    "selectedArtworkIds": [
+      "aic-53672",
+      "aic-76244",
+      "aic-44291",
+      "aic-151363",
+      "aic-129304",
+      "aic-72819",
+      "aic-90541"
+    ],
+    "layoutTemplate": "symmetrical_pair",
+    "curatorialRationale": "This exhibition explores the art of architectural representation through a curated selection of prints and drawings. By focusing exclusively on light-sensitive works on paper, the collection achieves a remarkable material cohesion. The layout is designed around symmetrical pairings to create visual dialogues: the dramatic, imagined prisons of Piranesi are juxtaposed, while the pioneering American modernism of Louis Sullivan and Frank Lloyd Wright is presented in conversation. Works by Meryon, Sargent, and Hiroshige broaden the scope, offering varied perspectives on structure and form. The arrangement provides a rhythmic journey through different artists' interpretations of architectural space, from classical fantasy to modernist systems."
+  }
+}

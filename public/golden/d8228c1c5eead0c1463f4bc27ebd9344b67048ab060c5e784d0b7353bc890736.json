@@ -1,0 +1,30 @@
+{
+  "hash": "d8228c1c5eead0c1463f4bc27ebd9344b67048ab060c5e784d0b7353bc890736",
+  "role": "interpretive_writer",
+  "model": "gemini-2.5-flash",
+  "recordedAt": "2026-11-15T21:42:52.467Z",
+  "usage": {
+    "promptTokens": 506,
+    "outputTokens": 356,
+    "totalTokens": 1729
+  },
+  "payload": {
+    "placards": [
+      {
+        "mountId": "mnt-wall-north-aic-14598",
+        "curatorialNote": "This oil on canvas captures a Parisian street scene on a rainy day. Caillebotte uses a striking, almost photographic perspective to frame the grand Haussmannian architecture. The buildings, with their uniform facades and strong lines, dominate the composition, reflecting the urban transformation of 19th-century Paris. This work highlights the architectural grandeur that shaped modern city life.",
+        "fontHeight_mm": 28
+      },
+      {
+        "mountId": "mnt-wall-north-aic-53672",
+        "curatorialNote": "This etching on heavy laid paper presents a dramatic architectural fantasy. Piranesi constructs an imagined world of monumental colonnades, soaring arches, and intricate details. The composition emphasizes the vast scale and dramatic interplay of light and shadow within these grand structures. It celebrates the imaginative power and awe-inspiring potential of architectural design.",
+        "fontHeight_mm": 28
+      },
+      {
+        "mountId": "mnt-wall-north-aic-72819",
+        "curatorialNote": "In this watercolor and graphite on cream wove paper, Sargent captures the sun-drenched arcade of a Venetian terrace. Loose, fluid strokes define the architectural elements, emphasizing the play of light and shadow across columns and arches. The work beautifully illustrates how natural light interacts with and transforms built environments, revealing the inherent beauty of architectural spaces.",
+        "fontHeight_mm": 28
+      }
+    ]
+  }
+}

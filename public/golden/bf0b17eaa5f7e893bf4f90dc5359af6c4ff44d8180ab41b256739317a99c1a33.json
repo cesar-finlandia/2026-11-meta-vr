@@ -1,0 +1,63 @@
+{
+  "hash": "bf0b17eaa5f7e893bf4f90dc5359af6c4ff44d8180ab41b256739317a99c1a33",
+  "role": "repair_critic",
+  "model": "gemini-3.8-flash",
+  "recordedAt": "2026-11-14T16:51:37.483Z",
+  "usage": {
+    "promptTokens": 3665,
+    "outputTokens": 497,
+    "totalTokens": 6469
+  },
+  "payload": {
+    "repairs": [
+      {
+        "issueId": "issue-placard-gap-mnt-wall-north-aic-27992",
+        "mountId": "mnt-wall-north-aic-27992",
+        "targetCenterY_cm": 145,
+        "targetSpotLux": 170,
+        "targetFontHeight_mm": 28
+      },
+      {
+        "issueId": "issue-placard-gap-mnt-wall-north-aic-14598",
+        "mountId": "mnt-wall-north-aic-14598",
+        "targetCenterY_cm": 145,
+        "targetSpotLux": 170,
+        "targetFontHeight_mm": 28
+      },
+      {
+        "issueId": "issue-placard-gap-mnt-wall-west-aic-16568",
+        "mountId": "mnt-wall-west-aic-16568",
+        "targetCenterY_cm": 145,
+        "targetSpotLux": 170,
+        "targetFontHeight_mm": 28
+      },
+      {
+        "issueId": "issue-placard-gap-mnt-wall-west-aic-111442",
+        "mountId": "mnt-wall-west-aic-111442",
+        "targetCenterY_cm": 145,
+        "targetSpotLux": 170,
+        "targetFontHeight_mm": 28
+      },
+      {
+        "issueId": "issue-placard-gap-mnt-wall-east-aic-102611",
+        "mountId": "mnt-wall-east-aic-102611",
+        "targetCenterY_cm": 145,
+        "targetSpotLux": 170,
+        "targetFontHeight_mm": 28
+      },
+      {
+        "issueId": "issue-placard-gap-mnt-wall-east-aic-72819",
+        "mountId": "mnt-wall-east-aic-72819",
+        "targetCenterY_cm": 145,
+        "targetSpotLux": 45,
+        "targetFontHeight_mm": 28
+      }
+    ],
+    "wallsToReflow": [
+      "wall-north",
+      "wall-west",
+      "wall-east"
+    ],
+    "criticSummary": "Scheduled wall spacing reflow for north, west, and east walls with an 18 cm minimum gap to clear frame overlaps. Corrected placard gaps and ensured 28 mm legibility font height, 145 cm centerline heights, and conservation-compliant illuminance across all mounts."
+  }
+}

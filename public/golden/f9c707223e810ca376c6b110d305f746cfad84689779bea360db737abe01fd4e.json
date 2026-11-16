@@ -1,0 +1,48 @@
+{
+  "hash": "f9c707223e810ca376c6b110d305f746cfad84689779bea360db737abe01fd4e",
+  "role": "repair_critic",
+  "model": "gemini-3.8-flash",
+  "recordedAt": "2026-11-14T16:53:03.659Z",
+  "usage": {
+    "promptTokens": 1974,
+    "outputTokens": 327,
+    "totalTokens": 3165
+  },
+  "payload": {
+    "repairs": [
+      {
+        "issueId": "issue-wall-bounds-right-mount-aic-16568",
+        "mountId": "mount-aic-16568",
+        "targetCenterY_cm": 145,
+        "targetSpotLux": 170,
+        "targetFontHeight_mm": 28
+      },
+      {
+        "issueId": "issue-wall-bounds-right-mnt-wall-north-aic-14598",
+        "mountId": "mnt-wall-north-aic-14598",
+        "targetCenterY_cm": 145,
+        "targetSpotLux": 170,
+        "targetFontHeight_mm": 28
+      },
+      {
+        "issueId": "issue-placard-wall-bounds-mnt-wall-north-aic-14598",
+        "mountId": "mnt-wall-north-aic-14598",
+        "targetCenterY_cm": 145,
+        "targetSpotLux": 170,
+        "targetFontHeight_mm": 28
+      },
+      {
+        "issueId": "issue-wall-bounds-right-mnt-wall-west-aic-76244",
+        "mountId": "mnt-wall-west-aic-76244",
+        "targetCenterY_cm": 145,
+        "targetSpotLux": 45,
+        "targetFontHeight_mm": 28
+      }
+    ],
+    "wallsToReflow": [
+      "wall-north",
+      "wall-west"
+    ],
+    "criticSummary": "Reflow horizontal spacing on wall-north and wall-west with minimum gap of 18 cm to resolve frame and placard wall boundary clipping while preserving accessible mounting heights and conservation lighting."
+  }
+}

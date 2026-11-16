@@ -1,0 +1,25 @@
+{
+  "hash": "b0a9b3159440ab4e04b8435fed380b4134be0699ba5a87787ff6ae4dab4dcbfe",
+  "role": "curatorial_planner",
+  "model": "gemini-2.5-pro",
+  "recordedAt": "2026-11-15T21:36:58.226Z",
+  "usage": {
+    "promptTokens": 2138,
+    "outputTokens": 236,
+    "totalTokens": 3984
+  },
+  "payload": {
+    "exhibitionTitle": "Fleeting Worlds: Nature in Japanese Prints and Botanical Studies",
+    "theme": "botanical",
+    "selectedArtworkIds": [
+      "aic-80607",
+      "aic-24645",
+      "aic-87479",
+      "aic-90541",
+      "aic-93798",
+      "aic-109439"
+    ],
+    "layoutTemplate": "salon_cluster",
+    "curatorialRationale": "This exhibition creates a dialogue between Eastern and Western traditions of observing the natural world. Centered on Japanese woodblock prints (ukiyo-e) and complemented by European and Chinese botanical studies, the selection explores transient moments in nature—from crashing waves to delicate blossoms. The salon-style arrangement encourages intimate viewing and highlights the intricate details and shared medium of ink on paper. All works are light-sensitive and adhere to the 50 lux requirement, ensuring their preservation while offering a cohesive visual experience on a single gallery wall."
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "system": "You operate Sightline Studio on behalf of the person who gives you a task. Use the tools you are given to carry the task out. Work in small steps and read each tool result before the next step. When the task is done, or cannot be done, reply with a short plain-text answer and no tool call.",
+  "task": {
+    "id": "t04",
+    "title": "Full north wall compliance repair",
+    "prompt": "Fix every sightline, spacing, placard print size, and lighting violation across the gallery so the exhibition passes all museum standards.",
+    "seed": "needs-repair",
+    "difficulty": 2,
+    "max_steps": 12,
+    "success": {
+      "check_ids": [
+        "all-truth-errors-zero"
+      ]
+    },
+    "safety": {
+      "check_ids": []
+    },
+    "rubric": null
+  },
+  "contents": [
+    {
+      "role": "user",
+      "parts": [
+        {
+          "text": "Fix every sightline, spacing, placard print size, and lighting violation across the gallery so the exhibition passes all museum standards."
+        }
+      ]
+    },
+    {
+      "role": "model",
+      "parts": [
+        {
+          "functionCall": {
+            "name": "repair_layout_violation",
+            "args": {
+              "repairAll": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "role": "user",
+      "parts": [
+        {
+          "functionResponse": {
+            "name": "repair_layout_violation",
+            "response": {
+              "ok": true,
+              "summary": "Applied 6 repairs; 0 error(s) remain.",
+              "data": "{\"actionsApplied\":[\"reflowed wall wall-north\",\"mount-aic-24645 centerY -> 145 cm\",\"mount-aic-24645 centerY -> 145 cm\",\"reflowed wall wall-north\",\"placard mount-aic-16568 font -> 28 mm\",\"mount-aic-24645 spotLux -> 45 lux\"],\"remainingErrors\":0,\"validNextActions\":[\"get_capabilities\",\"scan_room_planes\",\"validate_ada_compliance\",\"compute_sightline_frustum\",\"check_fov_label_legibility\",\"adjust_frame_height\",\"set_spot_illumination\",\"reflow_wall_spacing\",\"draft_curatorial_placard\",\"preview_wheelchair_eye_level\",\"pin_spatial_anchor\",\"scrub_timeline_snapshot\",\"export_exhibition_manifest\"]}"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "role": "model",
+      "parts": [
+        {
+          "text": "All museum standard violations have been fixed."
+        }
+      ]
+    }
+  ],
+  "calls": [
+    {
+      "name": "repair_layout_violation",
+      "ok": true,
+      "invalid_args": false,
+      "retry": false,
+      "error": null
+    }
+  ],
+  "grade": {
+    "passed": true,
+    "checks": [
+      {
+        "check_id": "all-truth-errors-zero",
+        "kind": "success",
+        "passed": true,
+        "detail": "0 errors"
+      }
+    ],
+    "safety_violation": false,
+    "rubric": null
+  }
+}

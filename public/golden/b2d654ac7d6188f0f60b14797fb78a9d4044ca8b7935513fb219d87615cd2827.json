@@ -1,0 +1,25 @@
+{
+  "hash": "b2d654ac7d6188f0f60b14797fb78a9d4044ca8b7935513fb219d87615cd2827",
+  "role": "curatorial_planner",
+  "model": "gemini-2.5-pro",
+  "recordedAt": "2026-11-15T21:41:32.945Z",
+  "usage": {
+    "promptTokens": 2136,
+    "outputTokens": 289,
+    "totalTokens": 5172
+  },
+  "payload": {
+    "exhibitionTitle": "Constructed Worlds: Architectural Visions from Piranesi to Wright",
+    "theme": "architectural",
+    "selectedArtworkIds": [
+      "aic-14598",
+      "aic-53672",
+      "aic-72819",
+      "aic-151363",
+      "aic-129304",
+      "aic-90541"
+    ],
+    "layoutTemplate": "symmetrical_pair",
+    "curatorialRationale": "This exhibition explores the representation of architectural space across cultures and centuries, from 18th-century European classicism to 20th-century American modernism. Caillebotte's monumental 'Paris Street; Rainy Day' serves as the anchor, capturing a fleeting urban moment. It is flanked by two thematic pairings: one wall juxtaposes Piranesi's classical etching with Sargent's impressionistic watercolor of Venice, exploring European perspectives. The opposing wall creates a dialogue between the organic modernism of Louis Sullivan and Frank Lloyd Wright and the Japanese spatial concepts seen in Hiroshige's print, which profoundly influenced their work. The selection deliberately balances a single, durable oil painting with five light-sensitive works on paper, creating a varied visual rhythm and addressing conservation needs."
+  }
+}

@@ -1,0 +1,671 @@
+{
+  "version": "1.0.0",
+  "contract_version": 1,
+  "contract_hash": "22c5edcc3eea9f8c0fb4a2dc083d7450017934d13ab60da1b2ce439eb1bf69b6",
+  "generated_at": "2026-11-15T22:33:34.440Z",
+  "actions": [
+    {
+      "name": "scan_room_planes",
+      "title": "Scan Room Planes",
+      "group": "read",
+      "description": "Reads detected WebXR vertical wall planes in centimeters or returns the three calibrated virtual gallery walls (420x280 cm, 360x280 cm, 360x280 cm). Precondition: XR session active or virtual twin initialized. Example: scan_room_planes({ source: 'virtual_twin' }). Follows the six-step Curatorial Onboarding and Compliance Protocol.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "source": {
+            "type": "string",
+            "description": "Source of wall planes: 'webxr_plane' for detected physical boundaries or 'virtual_twin' for default calibrated gallery walls.",
+            "enum": [
+              "webxr_plane",
+              "virtual_twin"
+            ]
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "annotations": {
+        "readOnly": true,
+        "destructive": false,
+        "untrustedContent": false
+      },
+      "dynamic": false
+    },
+    {
+      "name": "toggle_passthrough_wall_mode",
+      "title": "Toggle Passthrough Wall Mode",
+      "group": "navigate",
+      "description": "Switches passthrough active state and view mode between 1:1 physical room passthrough and virtual gallery elevation. Precondition: WebXR immersive-ar session available or virtual studio fallback ready. Example: toggle_passthrough_wall_mode({ enabled: true }).",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "enabled": {
+            "type": "boolean",
+            "description": "True to enable passthrough room mode; false for pure virtual gallery rendering."
+          }
+        },
+        "required": [
+          "enabled"
+        ],
+        "additionalProperties": false
+      },
+      "annotations": {
+        "readOnly": false,
+        "destructive": false,
+        "untrustedContent": false
+      },
+      "dynamic": false
+    },
+    {
+      "name": "toggle_seated_scale_twin",
+      "title": "Toggle Seated Scale Twin",
+      "group": "navigate",
+      "description": "Activates or stows the 1:8 miniature tabletop gallery maquette floating 55 cm ahead inside a 60 cm (2 ft) seated reach sphere. Precondition: Exhibition store initialized. Example: toggle_seated_scale_twin({ enabled: true }).",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "enabled": {
+            "type": "boolean",
+            "description": "True to activate the 1:8 scale tabletop maquette, false to stow."
+          }
+        },
+        "required": [
+          "enabled"
+        ],
+        "additionalProperties": false
+      },
+      "annotations": {
+        "readOnly": false,
+        "destructive": false,
+        "untrustedContent": false
+      },
+      "dynamic": false
+    },
+    {
+      "name": "load_iiif_collection",
+      "title": "Load IIIF Collection",
+      "group": "cross_boundary",
+      "description": "Parses an untrusted IIIF Presentation v2/v3 JSON string or loads the bundled 24-work Art Institute of Chicago CC0 catalog with physical centimeter dimensions and 50/200 lux ceilings. Precondition: Valid network or bundled collection access. Example: load_iiif_collection({ useBundledDefault: true }).",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "manifestJson": {
+            "type": "string",
+            "description": "Raw IIIF Presentation JSON string to parse and sanitize into museum catalog items."
+          },
+          "useBundledDefault": {
+            "type": "boolean",
+            "description": "True to load the bundled 24-artwork Art Institute of Chicago open access collection."
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "annotations": {
+        "readOnly": false,
+        "destructive": false,
+        "untrustedContent": true
+      },
+      "dynamic": false
+    },
+    {
+      "name": "filter_curatorial_theme",
+      "title": "Filter Curatorial Theme",
+      "group": "read",
+      "description": "Ranks catalog artworks against curatorial brief keywords, theme ('botanical', 'architectural', 'impressionist', 'modernist'), and optional conservation maxLuxCeiling (50 or 200 lux). To find specific artists or titles, pass query with their names; those works are always included and listed first. Precondition: Catalog populated. Example: filter_curatorial_theme({ brief: 'Architectural etchings', theme: 'architectural', query: 'Piranesi Wright' }).",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "brief": {
+            "type": "string",
+            "description": "Curator brief describing the exhibition goals and aesthetic direction."
+          },
+          "theme": {
+            "type": "string",
+            "description": "Target curatorial theme to filter by.",
+            "enum": [
+              "botanical",
+              "architectural",
+              "impressionist",
+              "modernist"
+            ]
+          },
+          "maxLuxCeiling": {
+            "type": "number",
+            "description": "Maximum allowable lux ceiling (50 lux for light-sensitive paper, 200 lux for oil on canvas)."
+          },
+          "query": {
+            "type": "string",
+            "description": "Optional artist, title or medium keywords such as 'Piranesi Wright'; works that match are always included and listed first."
+          }
+        },
+        "required": [
+          "brief"
+        ],
+        "additionalProperties": false
+      },
+      "annotations": {
+        "readOnly": true,
+        "destructive": false,
+        "untrustedContent": false
+      },
+      "dynamic": false
+    },
+    {
+      "name": "propose_wall_layout",
+      "title": "Propose Wall Layout",
+      "group": "change",
+      "description": "Computes a parametric wall hang ('chronological_spine', 'salon_cluster', 'symmetrical_pair') on wallIdOrName for artworkIds, verifying clearance and margins. Precondition: Target wall exists and artworkIds are present in catalog. Example: propose_wall_layout({ wallIdOrName: 'wall-north', artworkIds: ['art-1', 'art-2'], template: 'chronological_spine' }).",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "wallIdOrName": {
+            "type": "string",
+            "description": "Target wall identifier or human-readable wall name (e.g. 'North Limestone Gallery Wall')."
+          },
+          "artworkIds": {
+            "type": "array",
+            "description": "Array of catalog artwork IDs to place on the wall.",
+            "items": {
+              "type": "string",
+              "description": "Artwork catalog item ID."
+            }
+          },
+          "template": {
+            "type": "string",
+            "description": "Parametric hang template identifier.",
+            "enum": [
+              "chronological_spine",
+              "salon_cluster",
+              "symmetrical_pair"
+            ]
+          }
+        },
+        "required": [
+          "wallIdOrName",
+          "artworkIds"
+        ],
+        "additionalProperties": false
+      },
+      "annotations": {
+        "readOnly": false,
+        "destructive": false,
+        "untrustedContent": false
+      },
+      "dynamic": false
+    },
+    {
+      "name": "place_framed_artwork",
+      "title": "Place Framed Artwork",
+      "group": "change",
+      "description": "Mounts a single framed artwork onto target wall at center coordinates (centerX_cm, centerY_cm) with track spotlight illuminance in lux, creating an accompanying museum placard. Precondition: Target wall and artwork catalog entry exist. Example: place_framed_artwork({ wallIdOrName: 'wall-north', artworkIdOrTitle: 'art-1', centerX_cm: 210, centerY_cm: 148, spotLux: 45 }).",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "wallIdOrName": {
+            "type": "string",
+            "description": "Target wall identifier or human-readable name."
+          },
+          "artworkIdOrTitle": {
+            "type": "string",
+            "description": "Artwork catalog identifier or artwork title."
+          },
+          "centerX_cm": {
+            "type": "number",
+            "description": "Horizontal position of frame center along wall in centimeters."
+          },
+          "centerY_cm": {
+            "type": "number",
+            "description": "Vertical position of frame center above gallery floor in centimeters."
+          },
+          "spotLux": {
+            "type": "number",
+            "description": "Spotlight illuminance in lux (15 to 300 lux)."
+          }
+        },
+        "required": [
+          "wallIdOrName",
+          "artworkIdOrTitle",
+          "centerX_cm",
+          "centerY_cm"
+        ],
+        "additionalProperties": false
+      },
+      "annotations": {
+        "readOnly": false,
+        "destructive": false,
+        "untrustedContent": false
+      },
+      "dynamic": false
+    },
+    {
+      "name": "adjust_frame_height",
+      "title": "Adjust Frame Height",
+      "group": "change",
+      "description": "Moves a mounted framed artwork vertically (centerY_cm in cm, optional centerX_cm in cm) and synchronizes its museum placard height. Precondition: Mount exists on an active wall. Example: adjust_frame_height({ mountIdOrTitle: 'mount-1', centerY_cm: 145 }).",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "mountIdOrTitle": {
+            "type": "string",
+            "description": "Mounted artwork identifier or artwork title."
+          },
+          "centerY_cm": {
+            "type": "number",
+            "description": "New vertical center height above floor in centimeters."
+          },
+          "centerX_cm": {
+            "type": "number",
+            "description": "Optional new horizontal center position along wall in centimeters."
+          }
+        },
+        "required": [
+          "mountIdOrTitle",
+          "centerY_cm"
+        ],
+        "additionalProperties": false
+      },
+      "annotations": {
+        "readOnly": false,
+        "destructive": false,
+        "untrustedContent": false
+      },
+      "dynamic": false
+    },
+    {
+      "name": "reflow_wall_spacing",
+      "title": "Reflow Wall Spacing",
+      "group": "change",
+      "description": "Runs reflowWallMounts across target wall so every adjacent frame and placard clears minGap_cm (default 18 cm, rule floor 15 cm) and 20 cm wall margins. Precondition: Target wall has at least one mounted work. Example: reflow_wall_spacing({ wallIdOrName: 'wall-north', minGap_cm: 18 }).",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "wallIdOrName": {
+            "type": "string",
+            "description": "Target wall identifier or human-readable name."
+          },
+          "minGap_cm": {
+            "type": "number",
+            "description": "Minimum gap between adjacent frames and placards in centimeters (default 18 cm)."
+          }
+        },
+        "required": [
+          "wallIdOrName"
+        ],
+        "additionalProperties": false
+      },
+      "annotations": {
+        "readOnly": false,
+        "destructive": false,
+        "untrustedContent": false
+      },
+      "dynamic": false
+    },
+    {
+      "name": "set_spot_illumination",
+      "title": "Set Spot Illumination",
+      "group": "change",
+      "description": "Sets track spotlight illuminance in lux (15 to 300 lux) on target mount to satisfy 50 lux paper or 200 lux canvas conservation ceilings. Precondition: Target mount exists. Example: set_spot_illumination({ mountIdOrTitle: 'mount-1', spotLux: 45 }).",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "mountIdOrTitle": {
+            "type": "string",
+            "description": "Mounted artwork identifier or artwork title."
+          },
+          "spotLux": {
+            "type": "number",
+            "description": "Target illuminance in lux (15 to 300 lux)."
+          }
+        },
+        "required": [
+          "mountIdOrTitle",
+          "spotLux"
+        ],
+        "additionalProperties": false
+      },
+      "annotations": {
+        "readOnly": false,
+        "destructive": false,
+        "untrustedContent": false
+      },
+      "dynamic": false
+    },
+    {
+      "name": "compute_sightline_frustum",
+      "title": "Compute Sightline Frustum",
+      "group": "verify",
+      "description": "Computes 152 cm standing and 115 cm wheelchair 3D sightline cones, upward pitch angles in degrees, and angular placard legibility across the active gallery. Precondition: Exhibition has mounts placed. Example: compute_sightline_frustum({ wallIdOrName: 'wall-north' }).",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "wallIdOrName": {
+            "type": "string",
+            "description": "Optional wall identifier or name to filter sightline cones."
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "annotations": {
+        "readOnly": true,
+        "destructive": false,
+        "untrustedContent": false
+      },
+      "dynamic": false
+    },
+    {
+      "name": "preview_wheelchair_eye_level",
+      "title": "Preview Wheelchair Eye Level",
+      "group": "navigate",
+      "description": "Shifts active viewMode to wheelchair_115 (115 cm eye height) or standing_152 (152 cm eye height) and selects optional mount to frame in 3D. Precondition: Exhibition store initialized. Example: preview_wheelchair_eye_level({ enabled: true, mountIdOrTitle: 'mount-1' }).",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "enabled": {
+            "type": "boolean",
+            "description": "True for 115 cm seated wheelchair perspective; false for 152 cm standing."
+          },
+          "mountIdOrTitle": {
+            "type": "string",
+            "description": "Optional mounted artwork identifier or title to frame in focus."
+          }
+        },
+        "required": [
+          "enabled"
+        ],
+        "additionalProperties": false
+      },
+      "annotations": {
+        "readOnly": false,
+        "destructive": false,
+        "untrustedContent": false
+      },
+      "dynamic": false
+    },
+    {
+      "name": "validate_ada_compliance",
+      "title": "Validate ADA Compliance",
+      "group": "verify",
+      "description": "Runs full seven-rule SightlineTruthEngine audit, returning all errors and warnings with measured centimeter, degree, and lux values and suggested repair calls. Precondition: Exhibition store initialized. Example: validate_ada_compliance({ wallIdOrName: 'wall-north' }).",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "wallIdOrName": {
+            "type": "string",
+            "description": "Optional wall identifier or name to restrict audit."
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "annotations": {
+        "readOnly": true,
+        "destructive": false,
+        "untrustedContent": false
+      },
+      "dynamic": false
+    },
+    {
+      "name": "check_fov_label_legibility",
+      "title": "Check FoV Label Legibility",
+      "group": "verify",
+      "description": "Evaluates W3C XAUR placard angular font height (>= 1.2 degrees at 120 cm viewing distance) and verifies floating HUD offsets stay inside 30x22 degree central headset FoV cone. Precondition: Mounts with placards exist. Example: check_fov_label_legibility({ mountIdOrTitle: 'mount-1' }).",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "mountIdOrTitle": {
+            "type": "string",
+            "description": "Optional mounted artwork identifier or title to evaluate."
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "annotations": {
+        "readOnly": true,
+        "destructive": false,
+        "untrustedContent": false
+      },
+      "dynamic": false
+    },
+    {
+      "name": "repair_layout_violation",
+      "title": "Repair Layout Violation",
+      "group": "change",
+      "description": "Repairs every open ADA and conservation error in one call with repairAll: true, or one issue or mount at a time. Pass repairAll: true to fix every open error in one call (frame height, lighting, placard height and spacing, print size). Or pass issueId from validate_ada_compliance to fix that one issue with its recommended correction, or name a mount with explicit targets (targetCenterY_cm, targetSpotLux, targetFontHeight_mm, targetPlacardCenterY_cm, reflowWall). Precondition: the exhibition has mounted works. Example: repair_layout_violation({ repairAll: true }).",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "issueId": {
+            "type": "string",
+            "description": "Optional TruthIssue identifier to repair."
+          },
+          "mountIdOrTitle": {
+            "type": "string",
+            "description": "Target mount identifier or artwork title."
+          },
+          "targetCenterY_cm": {
+            "type": "number",
+            "description": "Corrected vertical centerline height above gallery floor in centimeters."
+          },
+          "targetSpotLux": {
+            "type": "number",
+            "description": "Corrected track spotlight illuminance in lux."
+          },
+          "targetFontHeight_mm": {
+            "type": "number",
+            "description": "Corrected placard font height in millimeters (e.g. 28 mm)."
+          },
+          "targetPlacardCenterY_cm": {
+            "type": "number",
+            "description": "Corrected placard centerline height in centimeters (reach band 120 to 140 cm)."
+          },
+          "repairAll": {
+            "type": "boolean",
+            "description": "True to repair every open error issue in one call using each issue's recommended correction."
+          },
+          "reflowWall": {
+            "type": "boolean",
+            "description": "True to execute automatic horizontal wall spacing reflow after repositioning."
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "annotations": {
+        "readOnly": false,
+        "destructive": false,
+        "untrustedContent": false
+      },
+      "dynamic": false
+    },
+    {
+      "name": "draft_curatorial_placard",
+      "title": "Draft Curatorial Placard",
+      "group": "collaborate",
+      "description": "Writes a museum placard (curatorialNote) of 45 to 70 words (notes outside 40 to 75 words are rejected, so count before sending) and sets fontHeight_mm (>= 26 mm for >= 1.2 degree legibility) on target mount. Count your words before sending; about 50 words is a safe target. Precondition: Target mount exists. Example: draft_curatorial_placard({ mountIdOrTitle: 'mount-1', curatorialNote: '<about 50 words of interpretive text>', fontHeight_mm: 28 }).",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "mountIdOrTitle": {
+            "type": "string",
+            "description": "Target mounted artwork identifier or title."
+          },
+          "curatorialNote": {
+            "type": "string",
+            "description": "Interpretive wall text copy of 45 to 70 words."
+          },
+          "fontHeight_mm": {
+            "type": "number",
+            "description": "Placard font height in millimeters (minimum 26 mm, recommended 28 mm)."
+          }
+        },
+        "required": [
+          "mountIdOrTitle",
+          "curatorialNote"
+        ],
+        "additionalProperties": false
+      },
+      "annotations": {
+        "readOnly": false,
+        "destructive": false,
+        "untrustedContent": false
+      },
+      "dynamic": false
+    },
+    {
+      "name": "swap_rejected_artwork",
+      "title": "Swap Rejected Artwork",
+      "group": "collaborate",
+      "description": "Replaces currently selected mounted artwork with replacementArtworkIdOrTitle matching exhibition theme and lux ceiling, routing through ApprovalGate. Precondition: An artwork mount is currently selected. Example: swap_rejected_artwork({ replacementArtworkIdOrTitle: 'art-3' }).",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "replacementArtworkIdOrTitle": {
+            "type": "string",
+            "description": "Identifier or title of replacement catalog artwork."
+          },
+          "mountIdOrTitle": {
+            "type": "string",
+            "description": "Optional mount identifier or title (defaults to currently selected mount)."
+          }
+        },
+        "required": [
+          "replacementArtworkIdOrTitle"
+        ],
+        "additionalProperties": false
+      },
+      "annotations": {
+        "readOnly": false,
+        "destructive": true,
+        "untrustedContent": false
+      },
+      "dynamic": true
+    },
+    {
+      "name": "pin_spatial_anchor",
+      "title": "Pin Spatial Anchor",
+      "group": "change",
+      "description": "Requests curator approval via ApprovalGate before locking SpatialAnchorRecord and saving physical gallery wall drill coordinates. Precondition: Target wall has finalized mounts and zero truth errors. Example: pin_spatial_anchor({ wallIdOrName: 'wall-north', label: 'North Wall Final Hang Schedule' }).",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "wallIdOrName": {
+            "type": "string",
+            "description": "Target wall identifier or human-readable wall name."
+          },
+          "wallId": {
+            "type": "string",
+            "description": "Optional wall ID alias."
+          },
+          "label": {
+            "type": "string",
+            "description": "Descriptive label for persistent spatial anchor."
+          }
+        },
+        "required": [
+          "label"
+        ],
+        "additionalProperties": false
+      },
+      "annotations": {
+        "readOnly": false,
+        "destructive": true,
+        "untrustedContent": false
+      },
+      "dynamic": false
+    },
+    {
+      "name": "scrub_timeline_snapshot",
+      "title": "Scrub Timeline Snapshot",
+      "group": "navigate",
+      "description": "Saves a named curatorial milestone (mode: 'save') or restores a prior milestone (mode: 'restore', snapshotIdOrLabel). Precondition: Exhibition store initialized. Example: scrub_timeline_snapshot({ mode: 'save', label: 'Initial Hang Proposal' }).",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "mode": {
+            "type": "string",
+            "description": "Timeline operation: 'save' to commit a new snapshot, or 'restore' to roll back.",
+            "enum": [
+              "save",
+              "restore"
+            ]
+          },
+          "label": {
+            "type": "string",
+            "description": "Descriptive milestone label when mode is 'save'."
+          },
+          "snapshotIdOrLabel": {
+            "type": "string",
+            "description": "Snapshot identifier or label when mode is 'restore'."
+          }
+        },
+        "required": [
+          "mode"
+        ],
+        "additionalProperties": false
+      },
+      "annotations": {
+        "readOnly": false,
+        "destructive": false,
+        "untrustedContent": false
+      },
+      "dynamic": false
+    },
+    {
+      "name": "export_exhibition_manifest",
+      "title": "Export Exhibition Manifest",
+      "group": "cross_boundary",
+      "description": "Exports a complete JSON hang schedule with wall coordinates in cm, spotlight settings in lux, sightline pitches in degrees, spatial anchors, and IIIF attributions. Precondition: Exhibition has walls and mounts defined. Example: export_exhibition_manifest({ includeAttributions: true }).",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "includeAttributions": {
+            "type": "boolean",
+            "description": "True to include full IIIF provenance and CC0 licensing attributions."
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "annotations": {
+        "readOnly": true,
+        "destructive": false,
+        "untrustedContent": false
+      },
+      "dynamic": false
+    }
+  ],
+  "procedures": [
+    {
+      "name": "curatorial_onboarding_and_compliance",
+      "steps": [
+        "scan_room_planes",
+        "toggle_seated_scale_twin",
+        "filter_curatorial_theme",
+        "propose_wall_layout",
+        "validate_ada_compliance",
+        "pin_spatial_anchor"
+      ]
+    },
+    {
+      "name": "audit_and_repair_wall",
+      "steps": [
+        "validate_ada_compliance",
+        "check_fov_label_legibility",
+        "repair_layout_violation",
+        "reflow_wall_spacing",
+        "scrub_timeline_snapshot"
+      ]
+    },
+    {
+      "name": "interactive_mount_reflow",
+      "steps": [
+        "swap_rejected_artwork",
+        "reflow_wall_spacing",
+        "validate_ada_compliance"
+      ]
+    }
+  ]
+}

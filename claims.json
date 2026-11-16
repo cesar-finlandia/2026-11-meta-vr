@@ -1,0 +1,143 @@
+{
+  "version": "1.0.0",
+  "generated_at": "2026-11-15T22:39:25.641Z",
+  "surfaces": [
+    "README.md",
+    "JUDGES.md",
+    "design_documents/submission_description.md",
+    "shots/showcase/captions.json",
+    "src/copy/**/*"
+  ],
+  "claims": [
+    {
+      "id": "c01",
+      "match": "100.0%",
+      "text": "100.0% task success (16/16)",
+      "kind": "number",
+      "source": {
+        "type": "artifact",
+        "path": "evals/report.json",
+        "pointer": "/treatment/pass_rate",
+        "format": "{v:1}%"
+      },
+      "ceiling": "Measured on 8 frozen tasks, 2 repetitions each, one model; it shows success on those tasks only, not on tasks in general.",
+      "status": "verified",
+      "verified_at": "2026-11-15T22:49:19.169Z"
+    },
+    {
+      "id": "c02",
+      "match": "12.5%",
+      "text": "12.5% (2/16)",
+      "kind": "number",
+      "source": {
+        "type": "artifact",
+        "path": "evals/report.json",
+        "pointer": "/control/pass_rate",
+        "format": "{v:1}%"
+      },
+      "ceiling": "Measured on 8 frozen tasks, 2 repetitions each, one model; it shows success on those tasks only, not on tasks in general.",
+      "status": "verified",
+      "verified_at": "2026-11-15T22:49:19.170Z"
+    },
+    {
+      "id": "c03",
+      "match": "15182.8 tokens",
+      "text": "15182.8 tokens",
+      "kind": "number",
+      "source": {
+        "type": "artifact",
+        "path": "evals/report.json",
+        "pointer": "/treatment/tokens_per_run",
+        "format": "{v} tokens"
+      },
+      "ceiling": "Mean over the 16 treatment runs of one iteration.",
+      "status": "verified",
+      "verified_at": "2026-11-15T22:49:19.171Z"
+    },
+    {
+      "id": "c04",
+      "match": "7.6 s",
+      "text": "7.6 s per try",
+      "kind": "number",
+      "source": {
+        "type": "artifact",
+        "path": "evals/report.json",
+        "pointer": "/treatment/wall_s_per_run",
+        "format": "{v} s"
+      },
+      "ceiling": "Mean wall time over the 16 treatment runs of one iteration.",
+      "status": "verified",
+      "verified_at": "2026-11-15T22:49:19.171Z"
+    },
+    {
+      "id": "c05",
+      "match": "only",
+      "text": "with generic screen actions only",
+      "kind": "superlative",
+      "source": {
+        "type": "artifact",
+        "path": "evals/report.json",
+        "contains": "\"control\""
+      },
+      "ceiling": "Descriptive: the comparison condition had screen actions and no typed actions; the result holds for the frozen tasks only.",
+      "status": "verified",
+      "verified_at": "2026-11-15T22:49:19.171Z"
+    },
+    {
+      "id": "c06",
+      "match": "only",
+      "text": "Generic screen actions only",
+      "kind": "superlative",
+      "source": {
+        "type": "artifact",
+        "path": "evals/report.json",
+        "contains": "\"control\""
+      },
+      "ceiling": "Descriptive label for the comparison condition.",
+      "status": "verified",
+      "verified_at": "2026-11-15T22:49:19.171Z"
+    },
+    {
+      "id": "c07",
+      "match": "only",
+      "text": "this shows success on those tasks only",
+      "kind": "superlative",
+      "source": {
+        "type": "artifact",
+        "path": "evals/report.json",
+        "contains": "this shows success on those tasks only"
+      },
+      "ceiling": "States the limit of the measurement.",
+      "status": "verified",
+      "verified_at": "2026-11-15T22:49:19.172Z"
+    },
+    {
+      "id": "c08",
+      "match": "first",
+      "text": "Valid first-try calls",
+      "kind": "superlative",
+      "source": {
+        "type": "artifact",
+        "path": "evals/report.json",
+        "contains": "\"first_pass_valid_rate\""
+      },
+      "ceiling": "Column label for the share of calls that were valid the first time.",
+      "status": "verified",
+      "verified_at": "2026-11-15T22:49:19.172Z"
+    },
+    {
+      "id": "c09",
+      "match": "only",
+      "text": "an iteration was kept only if success improved without more safety failures",
+      "kind": "superlative",
+      "source": {
+        "type": "artifact",
+        "path": "evals/report.json",
+        "contains": "\"iterations\""
+      },
+      "ceiling": "Describes the keep rule of the tuning loop.",
+      "status": "verified",
+      "verified_at": "2026-11-15T22:49:19.172Z"
+    }
+  ]
+}

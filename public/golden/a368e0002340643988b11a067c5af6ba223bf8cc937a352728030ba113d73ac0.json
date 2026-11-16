@@ -1,0 +1,20 @@
+{
+  "hash": "a368e0002340643988b11a067c5af6ba223bf8cc937a352728030ba113d73ac0",
+  "role": "repair_critic",
+  "model": "gemini-2.5-flash",
+  "recordedAt": "2026-11-15T21:41:00.187Z",
+  "usage": {
+    "promptTokens": 1461,
+    "outputTokens": 103,
+    "totalTokens": 2272
+  },
+  "payload": {
+    "repairs": [],
+    "wallsToReflow": [
+      "wall-west",
+      "wall-north",
+      "wall-east"
+    ],
+    "criticSummary": "Adjusted wall spacing for 'wall-west', 'wall-north', and 'wall-east' to resolve placard boundary violations, ensuring a minimum gap of 18 cm. No individual mount adjustments were required for centerline, lighting, or font legibility."
+  }
+}

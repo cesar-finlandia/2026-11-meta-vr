@@ -1,0 +1,63 @@
+{
+  "hash": "f9e220d4fcc36d68a5a021402a93c6def30fe65f8d6c71b645111e3a12ca02eb",
+  "role": "repair_critic",
+  "model": "gemini-3.8-flash",
+  "recordedAt": "2026-11-14T16:50:14.549Z",
+  "usage": {
+    "promptTokens": 3346,
+    "outputTokens": 478,
+    "totalTokens": 5526
+  },
+  "payload": {
+    "repairs": [
+      {
+        "issueId": "issue-placard-gap-mnt-wall-north-aic-14598",
+        "mountId": "mnt-wall-north-aic-14598",
+        "targetCenterY_cm": 145,
+        "targetSpotLux": 170,
+        "targetFontHeight_mm": 28
+      },
+      {
+        "issueId": "issue-placard-gap-mnt-wall-north-aic-151363",
+        "mountId": "mnt-wall-north-aic-151363",
+        "targetCenterY_cm": 145,
+        "targetSpotLux": 45,
+        "targetFontHeight_mm": 28
+      },
+      {
+        "issueId": "issue-placard-gap-mnt-wall-west-aic-53672",
+        "mountId": "mnt-wall-west-aic-53672",
+        "targetCenterY_cm": 145,
+        "targetSpotLux": 45,
+        "targetFontHeight_mm": 28
+      },
+      {
+        "issueId": "issue-placard-gap-mnt-wall-west-aic-76244",
+        "mountId": "mnt-wall-west-aic-76244",
+        "targetCenterY_cm": 145,
+        "targetSpotLux": 45,
+        "targetFontHeight_mm": 28
+      },
+      {
+        "issueId": "issue-placard-gap-mnt-wall-east-aic-44291",
+        "mountId": "mnt-wall-east-aic-44291",
+        "targetCenterY_cm": 145,
+        "targetSpotLux": 45,
+        "targetFontHeight_mm": 28
+      },
+      {
+        "issueId": "issue-placard-gap-mnt-wall-east-aic-129304",
+        "mountId": "mnt-wall-east-aic-129304",
+        "targetCenterY_cm": 145,
+        "targetSpotLux": 45,
+        "targetFontHeight_mm": 28
+      }
+    ],
+    "wallsToReflow": [
+      "wall-north",
+      "wall-west",
+      "wall-east"
+    ],
+    "criticSummary": "Reflowed north, west, and east walls with an 18 cm minimum frame clearance to resolve overlapping and spacing violations, and updated placard font sizes and vertical positioning across mounts to satisfy accessibility and legibility rules."
+  }
+}

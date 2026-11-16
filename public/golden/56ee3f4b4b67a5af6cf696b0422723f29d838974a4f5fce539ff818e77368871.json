@@ -1,0 +1,30 @@
+{
+  "hash": "56ee3f4b4b67a5af6cf696b0422723f29d838974a4f5fce539ff818e77368871",
+  "role": "interpretive_writer",
+  "model": "gemini-3.8-flash",
+  "recordedAt": "2026-11-14T16:49:13.925Z",
+  "usage": {
+    "promptTokens": 440,
+    "outputTokens": 286,
+    "totalTokens": 2931
+  },
+  "payload": {
+    "placards": [
+      {
+        "mountId": "mount-aic-80607",
+        "curatorialNote": "Rendered in ink, color, and gold on paper, this folding screen study arranges clusters of blue blooms across an open reflective plane. The visual structure relies on sharp vertical stalks alternating with broad negative space, creating a crisp rhythm across the panels. This design unites living botanical forms with the architectural discipline of domestic Japanese interiors.",
+        "fontHeight_mm": 28
+      },
+      {
+        "mountId": "mnt-wall-north-aic-16568",
+        "curatorialNote": "Painted in oil on canvas, this composition eliminates the horizon to immerse viewers in reflective pond water. Floating pads and blossoms anchor the visual structure, counterbalanced by diagonal sweeps of color that trace shifting sky and willow branches. The arrangement links botanical life directly to environmental architecture, organizing organic growth into a stable, enclosed sanctuary of surface light.",
+        "fontHeight_mm": 28
+      },
+      {
+        "mountId": "mount-aic-24645",
+        "curatorialNote": "This polychrome woodblock print uses ink and color on paper to stage a dramatic visual structure. A towering, claw-tipped wave forms an imposing spiral that frames the distant, stable triangle of Mount Fuji. Long wooden transport boats cut through water troughs, contrasting engineered human architecture with natural forces and organic, spray-laden curves that evoke branching botanical shapes.",
+        "fontHeight_mm": 28
+      }
+    ]
+  }
+}

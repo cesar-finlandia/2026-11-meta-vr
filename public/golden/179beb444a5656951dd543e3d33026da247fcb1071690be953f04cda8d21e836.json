@@ -1,0 +1,57 @@
+{
+  "hash": "179beb444a5656951dd543e3d33026da247fcb1071690be953f04cda8d21e836",
+  "role": "layout_strategist",
+  "model": "gemini-3.1-pro-preview",
+  "recordedAt": "2026-11-14T16:52:35.102Z",
+  "usage": {
+    "promptTokens": 773,
+    "outputTokens": 248,
+    "totalTokens": 2952
+  },
+  "payload": {
+    "placements": [
+      {
+        "artworkId": "aic-28560",
+        "wallId": "wall-north",
+        "centerX_cm": 120,
+        "centerY_cm": 145,
+        "spotLux": 160
+      },
+      {
+        "artworkId": "aic-14598",
+        "wallId": "wall-north",
+        "centerX_cm": 300,
+        "centerY_cm": 145,
+        "spotLux": 160
+      },
+      {
+        "artworkId": "aic-53672",
+        "wallId": "wall-west",
+        "centerX_cm": 120,
+        "centerY_cm": 145,
+        "spotLux": 45
+      },
+      {
+        "artworkId": "aic-76244",
+        "wallId": "wall-west",
+        "centerX_cm": 240,
+        "centerY_cm": 145,
+        "spotLux": 45
+      },
+      {
+        "artworkId": "aic-151363",
+        "wallId": "wall-east",
+        "centerX_cm": 120,
+        "centerY_cm": 145,
+        "spotLux": 45
+      },
+      {
+        "artworkId": "aic-129304",
+        "wallId": "wall-east",
+        "centerX_cm": 240,
+        "centerY_cm": 145,
+        "spotLux": 45
+      }
+    ]
+  }
+}

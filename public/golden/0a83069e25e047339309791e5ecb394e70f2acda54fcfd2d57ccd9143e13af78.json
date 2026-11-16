@@ -1,0 +1,25 @@
+{
+  "hash": "0a83069e25e047339309791e5ecb394e70f2acda54fcfd2d57ccd9143e13af78",
+  "role": "curatorial_planner",
+  "model": "gemini-2.5-pro",
+  "recordedAt": "2026-11-15T21:39:58.787Z",
+  "usage": {
+    "promptTokens": 2129,
+    "outputTokens": 250,
+    "totalTokens": 4926
+  },
+  "payload": {
+    "exhibitionTitle": "The Impressionist Moment: Light, Color, and Modern Life",
+    "theme": "impressionist",
+    "selectedArtworkIds": [
+      "aic-14598",
+      "aic-111442",
+      "aic-102611",
+      "aic-28560",
+      "aic-81539",
+      "aic-16568"
+    ],
+    "layoutTemplate": "chronological_spine",
+    "curatorialRationale": "This exhibition captures the vibrancy and innovation of the Impressionist movement by focusing exclusively on oil paintings, all suitable for the requested 200 lux illumination. The selection spans the core genres of the era—from Caillebotte's bustling cityscape and Monet's serene landscapes to Renoir's intimate portraiture, Van Gogh's iconic interior, and Cézanne's foundational still life. Arranged as a chronological spine, the layout guides the viewer through the evolving techniques and thematic concerns of these masters, creating a cohesive narrative about the fleeting moments of light, color, and modern life that defined this pivotal period in art history."
+  }
+}

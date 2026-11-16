@@ -1,0 +1,52 @@
+{
+  "name": "sightline-studio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Hands-first mixed-reality museum curation and ADA spatial compliance studio for Meta Quest 3 and WebXR.",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --port 5173",
+    "dev:api": "tsx src/server/index.ts",
+    "build": "tsc --noEmit && vite build",
+    "start": "tsx src/server/index.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:domain": "vitest run tests/domain",
+    "test:agent": "vitest run tests/agent",
+    "test:ui": "vitest run tests/ui",
+    "test:3d": "vitest run tests/3d",
+    "test:e2e": "playwright test -c e2e/playwright.config.ts",
+    "hygiene": "node scripts/verify-hygiene.mjs"
+  },
+  "dependencies": {
+    "@drawcall/uikitml": "0.1.8",
+    "@fontsource-variable/fraunces": "5.3.0",
+    "@fontsource-variable/jetbrains-mono": "5.3.0",
+    "@fontsource-variable/plus-jakarta-sans": "5.3.0",
+    "@iwsdk/core": "1.1.0",
+    "@react-three/fiber": "9.8.2",
+    "express": "5.1.0",
+    "google-auth-library": "11.3.4",
+    "iwer": "2.8.0",
+    "lil-gui": "0.21.0",
+    "lucide-react": "1.73.0",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "three": "0.185.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.65.1",
+    "@types/express": "5.0.6",
+    "@types/node": "22.19.1",
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3",
+    "@types/three": "0.185.0",
+    "@vitejs/plugin-react": "5.1.4",
+    "jsdom": "26.1.0",
+    "tsx": "4.21.0",
+    "typescript": "5.9.3",
+    "vite": "7.3.1",
+    "vitest": "4.0.18"
+  }
+}

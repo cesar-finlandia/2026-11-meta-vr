@@ -1,0 +1,55 @@
+{
+  "hash": "141bad5d4cd849116e1703cb6adedbe8a7efb529855dbe2c725061acd219ed4e",
+  "role": "repair_critic",
+  "model": "gemini-3.8-flash",
+  "recordedAt": "2026-11-14T16:51:49.921Z",
+  "usage": {
+    "promptTokens": 2117,
+    "outputTokens": 411,
+    "totalTokens": 3851
+  },
+  "payload": {
+    "repairs": [
+      {
+        "issueId": "issue-wall-bounds-right-mnt-wall-north-aic-14598",
+        "mountId": "mnt-wall-north-aic-14598",
+        "targetCenterY_cm": 145,
+        "targetSpotLux": 170,
+        "targetFontHeight_mm": 28
+      },
+      {
+        "issueId": "issue-wall-bounds-right-mount-aic-16568",
+        "mountId": "mount-aic-16568",
+        "targetCenterY_cm": 145,
+        "targetSpotLux": 170,
+        "targetFontHeight_mm": 28
+      },
+      {
+        "issueId": "issue-placard-wall-bounds-mount-aic-16568",
+        "mountId": "mount-aic-16568",
+        "targetCenterY_cm": 145,
+        "targetSpotLux": 170,
+        "targetFontHeight_mm": 28
+      },
+      {
+        "issueId": "issue-wall-bounds-right-mnt-wall-west-aic-111442",
+        "mountId": "mnt-wall-west-aic-111442",
+        "targetCenterY_cm": 145,
+        "targetSpotLux": 170,
+        "targetFontHeight_mm": 28
+      },
+      {
+        "issueId": "issue-placard-wall-bounds-mnt-wall-west-aic-111442",
+        "mountId": "mnt-wall-west-aic-111442",
+        "targetCenterY_cm": 145,
+        "targetSpotLux": 170,
+        "targetFontHeight_mm": 28
+      }
+    ],
+    "wallsToReflow": [
+      "wall-north",
+      "wall-west"
+    ],
+    "criticSummary": "Reflowing wall-north and wall-west spacing with an 18 cm minimum gap to eliminate all artwork and placard wall-boundary clipping violations while maintaining compliant 145 cm centerlines, conservation illuminance, and 28 mm placard font heights."
+  }
+}

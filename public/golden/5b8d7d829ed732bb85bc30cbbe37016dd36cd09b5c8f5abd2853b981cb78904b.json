@@ -1,0 +1,30 @@
+{
+  "hash": "5b8d7d829ed732bb85bc30cbbe37016dd36cd09b5c8f5abd2853b981cb78904b",
+  "role": "interpretive_writer",
+  "model": "gemini-3.8-flash",
+  "recordedAt": "2026-11-14T16:50:44.784Z",
+  "usage": {
+    "promptTokens": 445,
+    "outputTokens": 294,
+    "totalTokens": 2217
+  },
+  "payload": {
+    "placards": [
+      {
+        "mountId": "mount-aic-80607",
+        "curatorialNote": "Painted with ink, color, and gold leaf on paper, this multi-panel composition establishes dynamic rhythmic clusters of blossoming irises. Korin leaves the golden background open, using flat silhouettes and directional brushwork rather than horizon lines. This calculated spacing connects natural botanical forms to structural architectural rhythm, leading the viewer along an undulating visual path across space.",
+        "fontHeight_mm": 28
+      },
+      {
+        "mountId": "mnt-wall-north-aic-14598",
+        "curatorialNote": "Rendered in oil on canvas, this monumental scene uses precise geometric perspective to map modern Parisian boulevards. Strong vertical lampposts and buildings balance receding diagonal cobblestones, framing pedestrians beneath dark umbrellas. Caillebotte combines structured urban architecture with subtle shifts of atmospheric light, grounding the exhibition theme by treating engineered city surfaces as organized spaces for daily human movement.",
+        "fontHeight_mm": 28
+      },
+      {
+        "mountId": "mount-aic-24645",
+        "curatorialNote": "Produced as a polychrome woodblock print with ink and color on paper, this composition balances nature and human craft. A towering arching wave frames distant Mount Fuji, while fragile wooden fishing boats ride the surging troughs. Linear crests mirror organic natural growth, weaving architectural boat construction together with turbulent environmental forces to underscore the exhibition dialogue.",
+        "fontHeight_mm": 28
+      }
+    ]
+  }
+}

@@ -1,0 +1,65 @@
+[
+  {
+    "file": "gallery-01-gallery-overview.png",
+    "caption": "The gallery opens with every wall, frame and sightline cone in place.",
+    "alt": "The Sightline Studio workbench showing the 3D gallery and the compliance verdict.",
+    "claim_id": null,
+    "size": "gallery"
+  },
+  {
+    "file": "readme-01-gallery-overview.png",
+    "caption": "The gallery opens with every wall, frame and sightline cone in place.",
+    "alt": "The Sightline Studio workbench showing the 3D gallery and the compliance verdict.",
+    "claim_id": null,
+    "size": "readme"
+  },
+  {
+    "file": "gallery-02-truth-violation-audit.png",
+    "caption": "The rule engine lists each clearance, pitch and lighting problem with its measured value.",
+    "alt": "The compliance panel listing identified issues with Repair buttons.",
+    "claim_id": null,
+    "size": "gallery"
+  },
+  {
+    "file": "readme-02-truth-violation-audit.png",
+    "caption": "The rule engine lists each clearance, pitch and lighting problem with its measured value.",
+    "alt": "The compliance panel listing identified issues with Repair buttons.",
+    "claim_id": null,
+    "size": "readme"
+  },
+  {
+    "file": "gallery-03-repaired-zero-issues.png",
+    "caption": "After the curator approves the hang, the open-issue count settles at zero.",
+    "alt": "The compliance panel after approval showing zero open issues.",
+    "claim_id": null,
+    "size": "gallery"
+  },
+  {
+    "file": "readme-03-repaired-zero-issues.png",
+    "caption": "After the curator approves the hang, the open-issue count settles at zero.",
+    "alt": "The compliance panel after approval showing zero open issues.",
+    "claim_id": null,
+    "size": "readme"
+  },
+  {
+    "file": "gallery-04-watch-replay.png",
+    "caption": "The watch page replays a recorded curation step by step in a separate session.",
+    "alt": "The replay page with transport controls and the 3D stage.",
+    "claim_id": null,
+    "size": "gallery"
+  },
+  {
+    "file": "readme-04-watch-replay.png",
+    "caption": "The watch page replays a recorded curation step by step in a separate session.",
+    "alt": "The replay page with transport controls and the 3D stage.",
+    "claim_id": null,
+    "size": "readme"
+  },
+  {
+    "file": "hero.gif",
+    "caption": "A recorded run of the product doing its job.",
+    "alt": "Recorded run of the product",
+    "claim_id": null,
+    "size": "hero"
+  }
+]

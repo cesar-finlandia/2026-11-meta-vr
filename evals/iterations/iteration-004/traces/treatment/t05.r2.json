@@ -1,0 +1,287 @@
+{
+  "system": "You operate Sightline Studio on behalf of the person who gives you a task. Use the tools you are given to carry the task out. Work in small steps and read each tool result before the next step. When the task is done, or cannot be done, reply with a short plain-text answer and no tool call.",
+  "task": {
+    "id": "t05",
+    "title": "Curate botanical works on north wall",
+    "prompt": "Put together a four-work botanical display on the north gallery wall from our Chicago collection, keeping every paper work at fifty lux or below and compliant for seated visitors.",
+    "seed": "empty",
+    "difficulty": 2,
+    "max_steps": 14,
+    "success": {
+      "check_ids": [
+        "north-wall-has-at-least-3-botanical",
+        "all-truth-errors-zero"
+      ]
+    },
+    "safety": {
+      "check_ids": []
+    },
+    "rubric": null
+  },
+  "contents": [
+    {
+      "role": "user",
+      "parts": [
+        {
+          "text": "Put together a four-work botanical display on the north gallery wall from our Chicago collection, keeping every paper work at fifty lux or below and compliant for seated visitors."
+        }
+      ]
+    },
+    {
+      "role": "model",
+      "parts": [
+        {
+          "functionCall": {
+            "name": "load_iiif_collection",
+            "args": {
+              "useBundledDefault": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "role": "user",
+      "parts": [
+        {
+          "functionResponse": {
+            "name": "load_iiif_collection",
+            "response": {
+              "ok": true,
+              "summary": "Loaded 24 collection artworks into studio catalog.",
+              "data": "{\"loadedCount\":24,\"totalCatalogSize\":24,\"validNextActions\":[\"get_capabilities\",\"scan_room_planes\",\"filter_curatorial_theme\",\"propose_wall_layout\",\"load_iiif_collection\",\"toggle_seated_scale_twin\"]}"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "role": "model",
+      "parts": [
+        {
+          "functionCall": {
+            "name": "filter_curatorial_theme",
+            "args": {
+              "brief": "Four botanical works for display",
+              "maxLuxCeiling": 50,
+              "theme": "botanical"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "role": "user",
+      "parts": [
+        {
+          "functionResponse": {
+            "name": "filter_curatorial_theme",
+            "response": {
+              "ok": true,
+              "summary": "Filtered 9 artworks matching theme 'botanical'.",
+              "data": "{\"theme\":\"botanical\",\"matchingArtworks\":[{\"id\":\"aic-24645\",\"aicId\":24645,\"title\":\"Under the Wave off Kanagawa (The Great Wave)\",\"artist\":\"Katsushika Hokusai\",\"year\":1831,\"medium\":\"Polychrome woodblock print; ink and color on paper\",\"mediumTier\":\"paper_50_lux\",\"luxCap\":50,\"width_cm\":38,\"height_cm\":26,\"frame_border_cm\":4,\"frameFinish\":\"ebony\",\"themes\":[\"botanical\",\"architectural\"],\"paletteHex\":[\"#1D3E6E\",\"#E8DEC8\",\"#4A6D8C\"],\"iiifImageUrl\":\"https://www.artic.edu/iiif/2/24645/full/843,/0/default.jpg\",\"provenance\":\"Art Institute of Chicago Open Access (CC0 1.0 Public Domain)\",\"cc0Url\":\"https://www.artic.edu/artworks/24645\"},{\"id\":\"aic-80607\",\"aicId\":80607,\"title\":\"Irises\",\"artist\":\"Ogata Korin\",\"year\":1705,\"medium\":\"Six-panel screen study; ink, color, and gold on paper\",\"mediumTier\":\"paper_50_lux\",\"luxCap\":50,\"width_cm\":68,\"height_cm\":44,\"frame_border_cm\":4,\"frameFinish\":\"ebony\",\"themes\":[\"botanical\"],\"paletteHex\":[\"#C9A648\",\"#2B4A82\",\"#3A6B48\"],\"iiifImageUrl\":\"https://www.artic.edu/iiif/2/80607/full/843,/0/default.jpg\",\"provenance\":\"Art Institute of Chicago Open Access (CC0 1.0 Public Domain)\",\"cc0Url\":\"https://www.artic.edu/artworks/80607\"},{\"id\":\"aic-109439\",\"aicId\":109439,\"title\":\"Magnolia Grandiflora\",\"artist\":\"Pierre-Joseph Redoute\",\"year\":1812,\"medium\":\"Stipple engraving in color on paper\",\"mediumTier\":\"paper_50_lux\",\"luxCap\":50,\"width_cm\":36,\"height_cm\":48,\"frame_border_cm\":4,\"frameFinish\":\"walnut\",\"themes\":[\"botanical\"],\"paletteHex\":[\"#F2EFE6\",\"#466E45\",\"#D8C39E\"],\"iiifImageUrl\":\"https://www.artic.edu/iiif/2/109439/full/843,/0/default.jpg\",\"provenance\":\"Art Institute of Chicago Open Access (CC0 1.0 Public Domain)\",\"cc0Url\":\"https://www.artic.edu/artworks/109439\"},{\"id\":\"aic-87479\",\"aicId\":87479,\"title\":\"Hibiscus and Finch\",\"artist\":\"Katsushika Hokusai\",\"year\":1834,\"medium\":\"Woodblock print; ink and color on paper\",\"mediumTier\":\"paper_50_lux\",\"luxCap\":50,\"width_cm\":27,\"height_cm\":39,\"frame_border_cm\":3.5,\"frameFinish\":\"ebony\",\"themes\":[\"botanical\"],\"paletteHex\":[\"#E8DEC9\",\"#C86B4B\",\"#3F644A\"],\"iiifImageUrl\":\"https://www.artic.edu/iiif/2/87479/full/843,/0/default.jpg\",\"provenance\":\"Art Institute of Chicago Open Access (CC0 1.0 Public Domain)\",\"cc0Url\":\"https://www.artic.edu/artworks/87479\"},{\"id\":\"aic-93798\",\"aicId\":93798,\"title\":\"Botanical Study: White Peony and Bamboo\",\"artist\":\"Yun Shouping\",\"year\":1685,\"medium\":\"Album leaf; ink and color on paper\",\"mediumTier\":\"paper_50_lux\",\"luxCap\":50,\"width_cm\":40,\"height_cm\":32,\"frame_border_cm\":3.5,\"frameFinish\":\"walnut\",\"themes\":[\"botanical\"],\"paletteHex\":[\"#EFE9DC\",\"#4F6D52\",\"#9E8B70\"],\"iiifImageUrl\":\"https://www.artic.edu/iiif/2/93798/full/843,/0/default.jpg\",\"provenance\":\"Art Institute of Chicago Open Access (CC0 1.0 Public Domain)\",\"cc0Url\":\"https://www.artic.edu/artworks/93798\"},{\"id\":\"aic-151363\",\"aicId\":151363,\"title\":\"System of Architectural Ornament: Plate IV\",\"artist\":\"Louis H. Sullivan\",\"year\":1922,\"medium\":\"Graphite drawing and lithograph on paper\",\"mediumTier\":\"paper_50_lux\",\"luxCap\":50,\"width_cm\":58,\"height_cm\":74,\"frame_border_cm\":4,\"frameFinish\":\"walnut\",\"themes\":[\"architectural\",\"botanical\",\"modernist\"],\"paletteHex\":[\"#ECE6D8\",\"#5A5348\",\"#8A7E6B\"],\"iiifImageUrl\":\"https://www.artic.edu/iiif/2/151363/full/843,/0/default.jpg\",\"provenance\":\"Art Institute of Chicago Open Access (CC0 1.0 Public Domain)\",\"cc0Url\":\"https://www.artic.edu/artworks/151363\"},{\"id\":\"aic-118742\",\"aicId\":118742,\"title\":\"Roses and Anemones in Stoneware Vase\",\"artist\":\"Odilon Redon\",\"year\":1908,\"medium\":\"Pastel on tan wove paper\",\"mediumTier\":\"paper_50_lux\",\"luxCap\":50,\"width_cm\":52,\"height_cm\":64,\"frame_border_cm\":4.5,\"frameFinish\":\"gilt\",\"themes\":[\"botanical\",\"modernist\"],\"paletteHex\":[\"#C9B496\",\"#C44B58\",\"#486E7A\"],\"iiifImageUrl\":\"https://www.artic.edu/iiif/2/118742/full/843,/0/default.jpg\",\"provenance\":\"Art Institute of Chicago Open Access (CC0 1.0 Public Domain)\",\"cc0Url\":\"https://www.artic.edu/artworks/118742\"},{\"id\":\"aic-90541\",\"aicId\":90541,\"title\":\"Bamboo Courtyard at Kyobashi\",\"artist\":\"…[truncated]"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "role": "model",
+      "parts": [
+        {
+          "functionCall": {
+            "name": "propose_wall_layout",
+            "args": {
+              "wallIdOrName": "north gallery wall",
+              "artworkIds": [
+                "aic-24645",
+                "aic-80607",
+                "aic-109439",
+                "aic-87479"
+              ],
+              "template": "salon_cluster"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "role": "user",
+      "parts": [
+        {
+          "functionResponse": {
+            "name": "propose_wall_layout",
+            "response": {
+              "ok": false,
+              "summary": "Wall 'north gallery wall' could not be resolved.",
+              "data": "{\"validNextActions\":[\"get_capabilities\",\"scan_room_planes\",\"filter_curatorial_theme\",\"propose_wall_layout\",\"load_iiif_collection\",\"toggle_seated_scale_twin\"]}",
+              "error": "Wall 'north gallery wall' could not be resolved."
+            }
+          }
+        }
+      ]
+    },
+    {
+      "role": "model",
+      "parts": [
+        {
+          "functionCall": {
+            "name": "scan_room_planes",
+            "args": {
+              "source": "virtual_twin"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "role": "user",
+      "parts": [
+        {
+          "functionResponse": {
+            "name": "scan_room_planes",
+            "response": {
+              "ok": true,
+              "summary": "Scanned 3 gallery wall planes from source 'virtual_twin'.",
+              "data": "{\"walls\":[{\"id\":\"wall-north\",\"name\":\"North Limestone Gallery Wall\",\"width_cm\":420,\"height_cm\":280,\"position_m\":[0,0,-2.1],\"rotation_deg\":0,\"source\":\"virtual_twin\"},{\"id\":\"wall-west\",\"name\":\"West Study Alcove\",\"width_cm\":360,\"height_cm\":280,\"position_m\":[-2.1,0,0],\"rotation_deg\":90,\"source\":\"virtual_twin\"},{\"id\":\"wall-east\",\"name\":\"East Conservation Wall\",\"width_cm\":360,\"height_cm\":280,\"position_m\":[2.1,0,0],\"rotation_deg\":-90,\"source\":\"virtual_twin\"}],\"passthroughActive\":false,\"validNextActions\":[\"get_capabilities\",\"scan_room_planes\",\"filter_curatorial_theme\",\"propose_wall_layout\",\"load_iiif_collection\",\"toggle_seated_scale_twin\"]}"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "role": "model",
+      "parts": [
+        {
+          "functionCall": {
+            "name": "propose_wall_layout",
+            "args": {
+              "artworkIds": [
+                "aic-24645",
+                "aic-80607",
+                "aic-109439",
+                "aic-87479"
+              ],
+              "wallIdOrName": "wall-north",
+              "template": "salon_cluster"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "role": "user",
+      "parts": [
+        {
+          "functionResponse": {
+            "name": "propose_wall_layout",
+            "response": {
+              "ok": true,
+              "summary": "Computed salon_cluster hang for 4 works on North Limestone Gallery Wall.",
+              "data": "{\"wallId\":\"wall-north\",\"mountsCount\":4,\"mounts\":[{\"id\":\"mount-aic-87479\",\"artworkId\":\"aic-87479\",\"wallId\":\"wall-north\",\"centerX_cm\":37,\"centerY_cm\":141,\"spotLux\":45,\"pinnedAnchorId\":null,\"placard\":{\"id\":\"placard-mount-aic-87479\",\"mountId\":\"mount-aic-87479\",\"wallId\":\"wall-north\",\"titleText\":\"Hibiscus and Finch\",\"artistLine\":\"Katsushika Hokusai, 1834\",\"curatorialNote\":\"Woodblock print; ink and color on paper. Acquired from institutional archives. Art Institute of Chicago Open Access (CC0 1.0 Public Domain).\",\"wordCount\":21,\"centerX_cm\":73,\"centerY_cm\":130,\"width_cm\":18,\"height_cm\":11,\"fontHeight_mm\":28,\"side\":\"right\"}},{\"id\":\"mount-aic-109439\",\"artworkId\":\"aic-109439\",\"wallId\":\"wall-north\",\"centerX_cm\":126.7,\"centerY_cm\":149,\"spotLux\":45,\"pinnedAnchorId\":null,\"placard\":{\"id\":\"placard-mount-aic-109439\",\"mountId\":\"mount-aic-109439\",\"wallId\":\"wall-north\",\"titleText\":\"Magnolia Grandiflora\",\"artistLine\":\"Pierre-Joseph Redoute, 1812\",\"curatorialNote\":\"Stipple engraving in color on paper. Acquired from institutional archives. Art Institute of Chicago Open Access (CC0 1.0 Public Domain).\",\"wordCount\":20,\"centerX_cm\":167.7,\"centerY_cm\":130,\"width_cm\":18,\"height_cm\":11,\"fontHeight_mm\":28,\"side\":\"right\"}},{\"id\":\"mount-aic-80607\",\"artworkId\":\"aic-80607\",\"wallId\":\"wall-north\",\"centerX_cm\":237.3,\"centerY_cm\":146,\"spotLux\":45,\"pinnedAnchorId\":null,\"placard\":{\"id\":\"placard-mount-aic-80607\",\"mountId\":\"mount-aic-80607\",\"wallId\":\"wall-north\",\"titleText\":\"Irises\",\"artistLine\":\"Ogata Korin, 1705\",\"curatorialNote\":\"Six-panel screen study; ink, color, and gold on paper. Acquired from institutional archives. Art Institute of Chicago Open Access (CC0 1.0 Public Domain).\",\"wordCount\":23,\"centerX_cm\":294.3,\"centerY_cm\":130,\"width_cm\":18,\"height_cm\":11,\"fontHeight_mm\":28,\"side\":\"right\"}},{\"id\":\"mount-aic-24645\",\"artworkId\":\"aic-24645\",\"wallId\":\"wall-north\",\"centerX_cm\":349,\"centerY_cm\":149,\"spotLux\":45,\"pinnedAnchorId\":null,\"placard\":{\"id\":\"placard-mount-aic-24645\",\"mountId\":\"mount-aic-24645\",\"wallId\":\"wall-north\",\"titleText\":\"Under the Wave off Kanagawa (The Great Wave)\",\"artistLine\":\"Katsushika Hokusai, 1831\",\"curatorialNote\":\"Polychrome woodblock print; ink and color on paper. Acquired from institutional archives. Art Institute of Chicago Open Access (CC0 1.0 Public Domain).\",\"wordCount\":22,\"centerX_cm\":391,\"centerY_cm\":130,\"width_cm\":18,\"height_cm\":11,\"fontHeight_mm\":28,\"side\":\"right\"}}],\"validNextActions\":[\"get_capabilities\",\"scan_room_planes\",\"validate_ada_compliance\",\"compute_sightline_frustum\",\"check_fov_label_legibility\",\"adjust_frame_height\",\"set_spot_illumination\",\"reflow_wall_spacing\",\"draft_curatorial_placard\",\"preview_wheelchair_eye_level\",\"pin_spatial_anchor\",\"scrub_timeline_snapshot\",\"export_exhibition_manifest\"]}"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "role": "model",
+      "parts": [
+        {
+          "functionCall": {
+            "name": "validate_ada_compliance",
+            "args": {
+              "wallIdOrName": "wall-north"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "role": "user",
+      "parts": [
+        {
+          "functionResponse": {
+            "name": "validate_ada_compliance",
+            "response": {
+              "ok": true,
+              "summary": "Exhibition passes ADA and conservation compliance audit (0 errors, 0 warnings).",
+              "data": "{\"compliant\":true,\"errorCount\":0,\"warningCount\":0,\"issues\":[],\"validNextActions\":[\"get_capabilities\",\"scan_room_planes\",\"validate_ada_compliance\",\"compute_sightline_frustum\",\"check_fov_label_legibility\",\"adjust_frame_height\",\"set_spot_illumination\",\"reflow_wall_spacing\",\"draft_curatorial_placard\",\"preview_wheelchair_eye_level\",\"pin_spatial_anchor\",\"scrub_timeline_snapshot\",\"export_exhibition_manifest\"]}"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "role": "model",
+      "parts": [
+        {
+          "text": "The four-work botanical display has been arranged on the north gallery wall (\"wall-north\") in a salon cluster layout. All artworks are set to 45 lux, which is within the 50 lux limit for paper works. The display is fully compliant with ADA standards for seated visitors."
+        }
+      ]
+    }
+  ],
+  "calls": [
+    {
+      "name": "load_iiif_collection",
+      "ok": true,
+      "invalid_args": false,
+      "retry": false,
+      "error": null
+    },
+    {
+      "name": "filter_curatorial_theme",
+      "ok": true,
+      "invalid_args": false,
+      "retry": false,
+      "error": null
+    },
+    {
+      "name": "propose_wall_layout",
+      "ok": false,
+      "invalid_args": false,
+      "retry": false,
+      "error": "Wall 'north gallery wall' could not be resolved."
+    },
+    {
+      "name": "scan_room_planes",
+      "ok": true,
+      "invalid_args": false,
+      "retry": false,
+      "error": null
+    },
+    {
+      "name": "propose_wall_layout",
+      "ok": true,
+      "invalid_args": false,
+      "retry": false,
+      "error": null
+    },
+    {
+      "name": "validate_ada_compliance",
+      "ok": true,
+      "invalid_args": false,
+      "retry": false,
+      "error": null
+    }
+  ],
+  "grade": {
+    "passed": true,
+    "checks": [
+      {
+        "check_id": "north-wall-has-at-least-3-botanical",
+        "kind": "success",
+        "passed": true,
+        "detail": "4 botanical on north"
+      },
+      {
+        "check_id": "all-truth-errors-zero",
+        "kind": "success",
+        "passed": true,
+        "detail": "0 errors"
+      }
+    ],
+    "safety_violation": false,
+    "rubric": null
+  }
+}

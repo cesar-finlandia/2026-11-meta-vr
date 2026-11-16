@@ -1,0 +1,45 @@
+{
+  "hash": "5c893aa9b21f2a77f40ae1f28e84c1ec1722ab8abff0059966a7bcd208ff30ff",
+  "role": "repair_critic",
+  "model": "gemini-2.5-flash",
+  "recordedAt": "2026-11-15T21:44:24.361Z",
+  "usage": {
+    "promptTokens": 1745,
+    "outputTokens": 455,
+    "totalTokens": 3116
+  },
+  "payload": {
+    "repairs": [
+      {
+        "issueId": "issue-ada-pitch-mnt-wall-west-aic-109439",
+        "mountId": "mnt-wall-west-aic-109439",
+        "targetCenterY_cm": 145,
+        "targetSpotLux": 45,
+        "targetFontHeight_mm": 28
+      },
+      {
+        "issueId": "issue-centerline-mnt-wall-west-aic-109439",
+        "mountId": "mnt-wall-west-aic-109439",
+        "targetCenterY_cm": 145,
+        "targetSpotLux": 45,
+        "targetFontHeight_mm": 28
+      },
+      {
+        "issueId": "issue-placard-height-mnt-wall-west-aic-109439",
+        "mountId": "mnt-wall-west-aic-109439",
+        "targetCenterY_cm": 145,
+        "targetSpotLux": 45,
+        "targetFontHeight_mm": 28
+      },
+      {
+        "issueId": "issue-cci-lux-mnt-wall-west-aic-109439",
+        "mountId": "mnt-wall-west-aic-109439",
+        "targetCenterY_cm": 145,
+        "targetSpotLux": 45,
+        "targetFontHeight_mm": 28
+      }
+    ],
+    "wallsToReflow": [],
+    "criticSummary": "Adjusted 'Magnolia Grandiflora' to a 145 cm centerline for ADA compliance and improved viewing pitch. Reduced spotlight illuminance to 45 lux to meet conservation standards for paper works. Set placard font height to 28 mm for legibility."
+  }
+}

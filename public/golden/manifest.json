@@ -1,0 +1,258 @@
+{
+  "version": "1.0.0",
+  "count": 42,
+  "records": [
+    {
+      "hash": "bb48b3367a750399aa61275e82f370fba5687d2ace5e6dac7584dadd14639feb",
+      "role": "curatorial_planner",
+      "model": "gemini-3.1-pro-preview",
+      "recordedAt": "2026-11-14T16:48:02.920Z"
+    },
+    {
+      "hash": "07a37bb00f797e81ee37e03b7daf5d8bb928cb2d081b298cfe1022e994ef9eb8",
+      "role": "layout_strategist",
+      "model": "gemini-3.1-pro-preview",
+      "recordedAt": "2026-11-14T16:48:18.486Z"
+    },
+    {
+      "hash": "e59042e6036907bbc71c7e68d4bc08fd92faee73872ac9b229b0ac08eb5cc583",
+      "role": "repair_critic",
+      "model": "gemini-3.8-flash",
+      "recordedAt": "2026-11-14T16:48:38.041Z"
+    },
+    {
+      "hash": "e780aa0fdeca00ce8089a4bbc7f09f5f9dce54c6be4ebeab89563f208330ed80",
+      "role": "repair_critic",
+      "model": "gemini-3.8-flash",
+      "recordedAt": "2026-11-14T16:48:55.045Z"
+    },
+    {
+      "hash": "56ee3f4b4b67a5af6cf696b0422723f29d838974a4f5fce539ff818e77368871",
+      "role": "interpretive_writer",
+      "model": "gemini-3.8-flash",
+      "recordedAt": "2026-11-14T16:49:13.925Z"
+    },
+    {
+      "hash": "426c152a42baf29e3a0bffb4a9f2df3b1aeac2203ced9e2a6feeb09ba77ed134",
+      "role": "curatorial_planner",
+      "model": "gemini-3.1-pro-preview",
+      "recordedAt": "2026-11-14T16:49:36.095Z"
+    },
+    {
+      "hash": "c6de5efb86d38e89a82e4cbc8561beef928fc91e998bb24a73fdfebb94109fa5",
+      "role": "layout_strategist",
+      "model": "gemini-3.1-pro-preview",
+      "recordedAt": "2026-11-14T16:49:59.020Z"
+    },
+    {
+      "hash": "f9e220d4fcc36d68a5a021402a93c6def30fe65f8d6c71b645111e3a12ca02eb",
+      "role": "repair_critic",
+      "model": "gemini-3.8-flash",
+      "recordedAt": "2026-11-14T16:50:14.549Z"
+    },
+    {
+      "hash": "d804cc3deb0220db22b1211c8ec2478a6f5ef8f590665dfb6b715fdb4b4eefa1",
+      "role": "repair_critic",
+      "model": "gemini-3.8-flash",
+      "recordedAt": "2026-11-14T16:50:31.889Z"
+    },
+    {
+      "hash": "5b8d7d829ed732bb85bc30cbbe37016dd36cd09b5c8f5abd2853b981cb78904b",
+      "role": "interpretive_writer",
+      "model": "gemini-3.8-flash",
+      "recordedAt": "2026-11-14T16:50:44.784Z"
+    },
+    {
+      "hash": "9406a3251099aca15e52c1440eee679c10cf05b9f0d8d44c568a05ccd60ac74d",
+      "role": "curatorial_planner",
+      "model": "gemini-3.1-pro-preview",
+      "recordedAt": "2026-11-14T16:51:00.003Z"
+    },
+    {
+      "hash": "bab53ca9fc89ac291481bd7d47e62b649b53663aba161b1b455dd37ced0ff209",
+      "role": "layout_strategist",
+      "model": "gemini-3.1-pro-preview",
+      "recordedAt": "2026-11-14T16:51:18.563Z"
+    },
+    {
+      "hash": "bf0b17eaa5f7e893bf4f90dc5359af6c4ff44d8180ab41b256739317a99c1a33",
+      "role": "repair_critic",
+      "model": "gemini-3.8-flash",
+      "recordedAt": "2026-11-14T16:51:37.483Z"
+    },
+    {
+      "hash": "141bad5d4cd849116e1703cb6adedbe8a7efb529855dbe2c725061acd219ed4e",
+      "role": "repair_critic",
+      "model": "gemini-3.8-flash",
+      "recordedAt": "2026-11-14T16:51:49.921Z"
+    },
+    {
+      "hash": "a5c7b4e9168849d6afb2f40f6da0df0cbaa75464f0b26bbf264229481bbcc055",
+      "role": "interpretive_writer",
+      "model": "gemini-3.8-flash",
+      "recordedAt": "2026-11-14T16:52:06.169Z"
+    },
+    {
+      "hash": "554763a37ff077ad67241d041a04a8d2c97c3c22ec3ea604c0375e3756368692",
+      "role": "curatorial_planner",
+      "model": "gemini-3.1-pro-preview",
+      "recordedAt": "2026-11-14T16:52:20.103Z"
+    },
+    {
+      "hash": "179beb444a5656951dd543e3d33026da247fcb1071690be953f04cda8d21e836",
+      "role": "layout_strategist",
+      "model": "gemini-3.1-pro-preview",
+      "recordedAt": "2026-11-14T16:52:35.102Z"
+    },
+    {
+      "hash": "e4f8123a767807f6892fd1a4bd3f76416e9687d7b8934b9675e9b54ed1ef2ca3",
+      "role": "repair_critic",
+      "model": "gemini-3.8-flash",
+      "recordedAt": "2026-11-14T16:52:55.200Z"
+    },
+    {
+      "hash": "f9c707223e810ca376c6b110d305f746cfad84689779bea360db737abe01fd4e",
+      "role": "repair_critic",
+      "model": "gemini-3.8-flash",
+      "recordedAt": "2026-11-14T16:53:03.659Z"
+    },
+    {
+      "hash": "6f48c60412f244cb5318e379ac2b703d0d87f39b0e0ea03f0542154526215178",
+      "role": "interpretive_writer",
+      "model": "gemini-3.8-flash",
+      "recordedAt": "2026-11-14T16:53:19.756Z"
+    },
+    {
+      "hash": "cbc4c17fe6fdd894027b1454ffa498f505a3513e0103804414a76b73a1d6e3a1",
+      "role": "repair_critic",
+      "model": "gemini-3.8-flash",
+      "recordedAt": "2026-11-14T16:59:47.318Z"
+    },
+    {
+      "hash": "e4e4cf3b164b20ac588ceeaed142fb34f2b5e4008eeb3c848fad35164a7df11f",
+      "role": "interpretive_writer",
+      "model": "gemini-3.8-flash",
+      "recordedAt": "2026-11-14T17:00:06.666Z"
+    },
+    {
+      "hash": "b0a9b3159440ab4e04b8435fed380b4134be0699ba5a87787ff6ae4dab4dcbfe",
+      "role": "curatorial_planner",
+      "model": "gemini-2.5-pro",
+      "recordedAt": "2026-11-15T21:36:58.226Z"
+    },
+    {
+      "hash": "1eeffed2da2159593dba346cfb5a1adf8309fb851592174e638f50b7e21b9e12",
+      "role": "layout_strategist",
+      "model": "gemini-2.5-pro",
+      "recordedAt": "2026-11-15T21:37:41.722Z"
+    },
+    {
+      "hash": "6f79880c50788a9850302f78c71012505c4b0607dbdf7bf228a66c4252a87b86",
+      "role": "repair_critic",
+      "model": "gemini-2.5-flash",
+      "recordedAt": "2026-11-15T21:37:50.431Z"
+    },
+    {
+      "hash": "a46cc8b8c558143aa0ea5cdd5d52dc29c2209c92ad865fcd8b8cf21ea522b59a",
+      "role": "interpretive_writer",
+      "model": "gemini-2.5-flash",
+      "recordedAt": "2026-11-15T21:37:58.909Z"
+    },
+    {
+      "hash": "c7f3c77673f0a6bfbb06c442a583948e1556413cee2dcb02672abfb9f059db6a",
+      "role": "curatorial_planner",
+      "model": "gemini-2.5-pro",
+      "recordedAt": "2026-11-15T21:38:18.190Z"
+    },
+    {
+      "hash": "0154bfa27d3e652b8f8ae8dd386029998f68248bfbd66851df32899593794051",
+      "role": "layout_strategist",
+      "model": "gemini-2.5-pro",
+      "recordedAt": "2026-11-15T21:39:14.211Z"
+    },
+    {
+      "hash": "1274e04d85393dfb88f69d84fbef296ddb900f78d36c8e069b6acfff12073533",
+      "role": "repair_critic",
+      "model": "gemini-2.5-flash",
+      "recordedAt": "2026-11-15T21:39:28.420Z"
+    },
+    {
+      "hash": "8e81d0f6d6d57bb55a3aa6bbc8890ee4be450cb8dfc84d140b850e9fba49e44d",
+      "role": "interpretive_writer",
+      "model": "gemini-2.5-flash",
+      "recordedAt": "2026-11-15T21:39:34.920Z"
+    },
+    {
+      "hash": "0a83069e25e047339309791e5ecb394e70f2acda54fcfd2d57ccd9143e13af78",
+      "role": "curatorial_planner",
+      "model": "gemini-2.5-pro",
+      "recordedAt": "2026-11-15T21:39:58.787Z"
+    },
+    {
+      "hash": "c184f094e6092e18f24f939d8a3a6106e232ea17a22f6a9e593b60f286349cf2",
+      "role": "layout_strategist",
+      "model": "gemini-2.5-pro",
+      "recordedAt": "2026-11-15T21:40:54.919Z"
+    },
+    {
+      "hash": "a368e0002340643988b11a067c5af6ba223bf8cc937a352728030ba113d73ac0",
+      "role": "repair_critic",
+      "model": "gemini-2.5-flash",
+      "recordedAt": "2026-11-15T21:41:00.187Z"
+    },
+    {
+      "hash": "04f3ff5ec6ee8b1dcc4307c5286e47fdfeee200bc8fdd81e6caed2db4916a888",
+      "role": "interpretive_writer",
+      "model": "gemini-2.5-flash",
+      "recordedAt": "2026-11-15T21:41:07.518Z"
+    },
+    {
+      "hash": "b2d654ac7d6188f0f60b14797fb78a9d4044ca8b7935513fb219d87615cd2827",
+      "role": "curatorial_planner",
+      "model": "gemini-2.5-pro",
+      "recordedAt": "2026-11-15T21:41:32.945Z"
+    },
+    {
+      "hash": "8e7709fd94b39fb79423c504a58ea409770bbef4e3ace2d5bf75c86ea3dfac50",
+      "role": "layout_strategist",
+      "model": "gemini-2.5-pro",
+      "recordedAt": "2026-11-15T21:42:21.037Z"
+    },
+    {
+      "hash": "818b2baf25d5efa219a97f610d832b70261173e7e10cf0f82e5b8c5259aee1e0",
+      "role": "repair_critic",
+      "model": "gemini-2.5-flash",
+      "recordedAt": "2026-11-15T21:42:44.034Z"
+    },
+    {
+      "hash": "d8228c1c5eead0c1463f4bc27ebd9344b67048ab060c5e784d0b7353bc890736",
+      "role": "interpretive_writer",
+      "model": "gemini-2.5-flash",
+      "recordedAt": "2026-11-15T21:42:52.467Z"
+    },
+    {
+      "hash": "af199c4ad26779ef07d3aa018c034858abf874c662147ce18fe0ea8108f44d46",
+      "role": "curatorial_planner",
+      "model": "gemini-2.5-pro",
+      "recordedAt": "2026-11-15T21:43:18.818Z"
+    },
+    {
+      "hash": "968ff41cd1a0159dcd6df93e932ec593b5cbacd7aede2a1ae5c1e24f97bc21e3",
+      "role": "layout_strategist",
+      "model": "gemini-2.5-pro",
+      "recordedAt": "2026-11-15T21:44:19.125Z"
+    },
+    {
+      "hash": "5c893aa9b21f2a77f40ae1f28e84c1ec1722ab8abff0059966a7bcd208ff30ff",
+      "role": "repair_critic",
+      "model": "gemini-2.5-flash",
+      "recordedAt": "2026-11-15T21:44:24.361Z"
+    },
+    {
+      "hash": "9bc933a4ec5f67a0c573a0a3b917aa7151eab4fdcbcf96d34334d5781be5ad37",
+      "role": "interpretive_writer",
+      "model": "gemini-2.5-flash",
+      "recordedAt": "2026-11-15T21:44:33.484Z"
+    }
+  ]
+}

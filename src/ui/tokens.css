@@ -1,0 +1,180 @@
+:root,
+[data-theme="paper"] {
+  --bg: #F4F1EA;
+  --bg-elevated: #FCFAF6;
+  --bg-sunken: #ECE7DE;
+  --border: #78746A;
+  --border-strong: #524E46;
+  --text: #16191F;
+  --text-muted: #434954;
+  --text-inverse: #FAF9F6;
+  --accent: #1B4D8E;
+  --accent-hover: #143A6B;
+  --accent-contrast: #FFFFFF;
+  --accent-soft: #E3EBF6;
+  --success: #0A5C44;
+  --success-bg: #E2F0EA;
+  --warning: #8F5106;
+  --warning-bg: #FDF3E4;
+  --danger: #8C2426;
+  --danger-bg: #FAF0EE;
+  --degraded: #5B3E96;
+  --degraded-bg: #F1ECF9;
+  --chart-1: #1B2B3E;
+  --chart-2: #0A5C44;
+  --chart-3: #C06C0B;
+  --chart-4: #7A3E9D;
+  --chart-5: #2B6CB0;
+  --chart-6: #A61E1C;
+  --brand-accent: #1B2B3E;
+
+  /* 3D Scene Palette Mapping (shared single source of truth) */
+  --scene-bg: #E3DDD0;
+  --scene-ground: #8A8270;
+  --scene-accent: #1B4D8E;
+  --scene-text: #16191F;
+  --scene-mat-wall: #D9D2C3;
+  --scene-mat-frame-walnut: #5A4231;
+  --scene-mat-frame-gilt: #9E7B3B;
+  --scene-mat-frame-ebony: #26282E;
+  --scene-mat-matboard: #F7F5EE;
+  --scene-mat-cone-pass: #0E6B50;
+  --scene-mat-cone-warn: #8F5106;
+  --scene-mat-cone-fail: #A61E1C;
+  --scene-mat-plaque: #FFFFFF;
+  --scene-mat-maquette-base: #C9C1B0;
+
+  /* Three-step elevation scale — Paper */
+  --elev-1-shadow: 0 4px 16px -2px rgba(40, 35, 30, 0.08), 0 1px 3px rgba(22, 25, 31, 0.04);
+  --elev-1-blur: 0px;
+  --elev-2-bg: rgba(255, 255, 255, 0.94);
+  --elev-2-shadow: 0 6px 20px -2px rgba(40, 35, 30, 0.12), 0 2px 6px rgba(22, 25, 31, 0.05);
+  --elev-2-blur: 8px;
+  --elev-3-bg: #FFFFFF;
+  --elev-3-shadow: 0 16px 40px rgba(22, 25, 31, 0.18);
+  --elev-3-blur: 12px;
+}
+
+[data-theme="dark"] {
+  --bg: #12161D;
+  --bg-elevated: #1A202B;
+  --bg-sunken: #0D1016;
+  --border: #677285;
+  --border-strong: #939FB4;
+  --text: #F1F3F7;
+  --text-muted: #B2BCCB;
+  --text-inverse: #12161D;
+  --accent: #73ABFF;
+  --accent-hover: #94BFFF;
+  --accent-contrast: #0D131F;
+  --accent-soft: #1B2B44;
+  --success: #47D1A6;
+  --success-bg: #112B24;
+  --warning: #F5B14C;
+  --warning-bg: #2E2210;
+  --danger: #FF7A78;
+  --danger-bg: #321618;
+  --degraded: #B99CFF;
+  --degraded-bg: #231B36;
+  --chart-1: #73ABFF;
+  --chart-2: #47D1A6;
+  --chart-3: #F5B14C;
+  --chart-4: #C79BFF;
+  --chart-5: #63B3ED;
+  --chart-6: #FF7A78;
+  --brand-accent: #73ABFF;
+
+  /* 3D Scene Palette Mapping — Dark Conservation Vault */
+  --scene-bg: #141922;
+  --scene-ground: #0E1219;
+  --scene-accent: #73ABFF;
+  --scene-text: #F1F3F7;
+  --scene-mat-wall: #222936;
+  --scene-mat-frame-walnut: #6E523E;
+  --scene-mat-frame-gilt: #BA934B;
+  --scene-mat-frame-ebony: #363B45;
+  --scene-mat-matboard: #E8E6DF;
+  --scene-mat-cone-pass: #47D1A6;
+  --scene-mat-cone-warn: #F5B14C;
+  --scene-mat-cone-fail: #FF7A78;
+  --scene-mat-plaque: #1A202B;
+  --scene-mat-maquette-base: #1E2532;
+
+  /* Three-step elevation scale — Dark */
+  --elev-1-shadow: 0 1px 0 rgba(255, 255, 255, 0.05) inset;
+  --elev-1-blur: 0px;
+  --elev-2-bg: rgba(26, 32, 43, 0.94);
+  --elev-2-shadow: 0 8px 24px rgba(10, 12, 18, 0.48);
+  --elev-2-blur: 8px;
+  --elev-3-bg: #222A38;
+  --elev-3-shadow: 0 20px 48px rgba(10, 12, 18, 0.68);
+  --elev-3-blur: 12px;
+}
+
+:root {
+  /* Self-hosted variable font stacks */
+  --font-display: "Fraunces Variable", Georgia, "Times New Roman", serif;
+  --font-sans: "Plus Jakarta Sans Variable", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "JetBrains Mono Variable", Consolas, monospace;
+
+  /* Type scale (camera-ready §13 floors: body >=18px, numerals >=28px, hero >=64px) */
+  --text-display: 2.25rem;   /* 36px, weight 700, lh 1.12, tracking -0.02em */
+  --text-h1: 1.625rem;       /* 26px, weight 700, lh 1.18, tracking -0.015em */
+  --text-h2: 1.3125rem;      /* 21px, weight 650, lh 1.24, tracking -0.01em */
+  --text-h3: 1.125rem;       /* 18px, weight 650, lh 1.30, tracking -0.005em */
+  --text-body: 1.125rem;     /* 18px, weight 400, lh 1.50 */
+  --text-subject: 1.1875rem; /* 19px, weight 700, lh 1.25, tracking -0.01em */
+  --text-support: 0.875rem;  /* 14px, weight 400, lh 1.40 */
+  --text-eyebrow: 0.75rem;   /* 12px, weight 700, lh 1.20, uppercase, tracking +0.06em */
+  --text-caption: 0.8125rem; /* 13px, mono weight 500, lh 1.35 */
+  --metric-hero: 4.0rem;     /* 64px, weight 750, lh 1.00, tabular-nums (digit budget: 6 chars) */
+  --metric-lg: 2.0rem;       /* 32px, weight 700, lh 1.05, tabular-nums (digit budget: 11 chars) */
+  --metric-md: 1.75rem;      /* 28px, weight 700, lh 1.08, tabular-nums (digit budget: 9 chars) */
+
+  /* 4px base spacing scale */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+
+  /* Radius scale */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-pill: 999px;
+
+  /* Motion tokens (all 200-400ms) */
+  --dur-theme: 220ms;
+  --dur-enter: 240ms;
+  --dur-alert: 260ms;
+  --dur-step: 280ms;
+  --dur-verdict: 320ms;
+  --dur-inflight: 360ms;
+  --ease-out-quart: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-step: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-standard: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --dur-theme: 1ms;
+    --dur-enter: 1ms;
+    --dur-alert: 1ms;
+    --dur-step: 1ms;
+    --dur-verdict: 1ms;
+    --dur-inflight: 1ms;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 1ms !important;
+    scroll-behavior: auto !important;
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "hash": "e4e4cf3b164b20ac588ceeaed142fb34f2b5e4008eeb3c848fad35164a7df11f",
+  "role": "interpretive_writer",
+  "model": "gemini-3.8-flash",
+  "recordedAt": "2026-11-14T17:00:06.666Z",
+  "usage": {
+    "promptTokens": 431,
+    "outputTokens": 299,
+    "totalTokens": 2911
+  },
+  "payload": {
+    "placards": [
+      {
+        "mountId": "mnt-wall-north-aic-16568",
+        "curatorialNote": "Rendered in oil on canvas, this painting removes the traditional horizon to immerse viewers entirely in pond water and floating vegetation. Broad horizontal brushstrokes establish the water's glassy plane, while circular clusters of white and pink blossoms create stable anchors. Monet blends organic botanical growth with spatial balance, evoking quiet architectural order across a liquid surface.",
+        "fontHeight_mm": 28
+      },
+      {
+        "mountId": "mnt-wall-north-aic-81539",
+        "curatorialNote": "Executed in oil on canvas, this composition treats fresh fruit like solid structural blocks. Cézanne tilts the tabletop and crumples the white cloth into rigid folds that mimic stony terraces. Round apples scatter across opposing angles, grounding the scene through careful geometry. The botanical subjects provide vibrant color while demonstrating how natural forms can anchor firm architectural space.",
+        "fontHeight_mm": 28
+      },
+      {
+        "mountId": "mnt-wall-west-aic-109439",
+        "curatorialNote": "Produced as a stipple engraving in color on paper, this botanical study isolates a solitary magnolia branch against plain paper. Redouté arranges heavy dark leaves around a blooming white flower, creating a balanced, pyramid-like structure. Fine dotted lines define each petal's curving volume, uniting scientific botanical observation with the disciplined drafting methods seen in classical architectural design.",
+        "fontHeight_mm": 28
+      }
+    ]
+  }
+}

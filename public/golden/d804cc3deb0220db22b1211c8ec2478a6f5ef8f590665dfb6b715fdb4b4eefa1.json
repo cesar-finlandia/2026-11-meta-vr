@@ -1,0 +1,19 @@
+{
+  "hash": "d804cc3deb0220db22b1211c8ec2478a6f5ef8f590665dfb6b715fdb4b4eefa1",
+  "role": "repair_critic",
+  "model": "gemini-3.8-flash",
+  "recordedAt": "2026-11-14T16:50:31.889Z",
+  "usage": {
+    "promptTokens": 1968,
+    "outputTokens": 61,
+    "totalTokens": 4095
+  },
+  "payload": {
+    "repairs": [],
+    "wallsToReflow": [
+      "wall-north",
+      "wall-west"
+    ],
+    "criticSummary": "Identified boundary clipping violations on wall-north and wall-west. Scheduled reflow with 18 cm minimum gap spacing for wall-north and wall-west to restore compliant wall margins."
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "hash": "af199c4ad26779ef07d3aa018c034858abf874c662147ce18fe0ea8108f44d46",
+  "role": "curatorial_planner",
+  "model": "gemini-2.5-pro",
+  "recordedAt": "2026-11-15T21:43:18.818Z",
+  "usage": {
+    "promptTokens": 2108,
+    "outputTokens": 266,
+    "totalTokens": 5224
+  },
+  "payload": {
+    "exhibitionTitle": "The Enduring Bloom: Botanical Art from East and West",
+    "theme": "botanical",
+    "selectedArtworkIds": [
+      "aic-16568",
+      "aic-111442",
+      "aic-80607",
+      "aic-109439",
+      "aic-93798",
+      "aic-118742"
+    ],
+    "layoutTemplate": "symmetrical_pair",
+    "curatorialRationale": "This exhibition explores diverse artistic interpretations of botanical subjects across cultures and eras. The selection is anchored by two major Impressionist oil paintings by Monet and Renoir, which capture the ephemeral, atmospheric qualities of the natural world. These are placed in dialogue with a curated group of more intimate works on paper. These studies range from the scientific precision of Redouté's engraving to the elegant, stylized forms in works by Korin and Yun Shouping from Japan and China, and the rich, symbolic pastels of Redon. This juxtaposition creates a dynamic visual rhythm, contrasting large-scale, durable paintings with delicate, light-sensitive works that invite close looking, and highlights a global conversation about humanity's fascination with flora."
+  }
+}
