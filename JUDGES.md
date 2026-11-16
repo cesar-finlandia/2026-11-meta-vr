@@ -1,7 +1,7 @@
 # Judges' guide
 
-**Live:** https://sightline-studio-7wndoy2fuq-uc.a.run.app
-**Video:** https://youtu.be/pending-upload
+**Live:** (available in the hackathon submission)
+**Video:** https://youtu.be/gPcY1CrTlsM
 **Repository:** https://github.com/cesar-finlandia/2026-11-meta-vr
 
 ## The 60-second path

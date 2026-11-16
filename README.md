@@ -76,6 +76,23 @@ Method: eight tasks written in the user's own words and frozen before tuning (ha
 - [`evals/report.json`](evals/report.json): the frozen-task comparison behind the measured numbers above.
 
 ## Architecture
+![System architecture: client, XR engine, service and model lanes with 8 nodes and 8 edges](design_documents/architecture.png)
+
+Source: `design_documents/architecture.draft.json` (8 nodes across `client` / `xr-engine` / `service` / `model`, `iwsdk-xr` sponsor node, 8 runtime-proof edges).
+
+| Lane | Node | Role |
+|---|---|---|
+| client | Curator Workbench | Paper & Vault UI + Approval Gate |
+| client | Exhibition Store | Revisions, undo & AIC IIIF catalog |
+| xr-engine | Meta IWSDK + Three (sponsor) | Hands-first WebXR & 1:8 tabletop twin |
+| xr-engine | Sightline Truth | 115 cm ADA pitch, XAUR & 50 lux rules |
+| service | 20-Action Surface | Typed tools + human approval gate |
+| service | Express SSE Hub | Progress stream & golden cache |
+| model | Gemini 2.5 Pro | Curatorial planner & layout strategist |
+| model | Gemini 2.5 Flash | ADA repair critic & placard writer |
+
+Flows: Workbench → Actions (brief & approvals) → Store (20 typed actions) → IWSDK (wall & cone sync) ⇄ Actions (hand pinch & scan); Store → Truth (cm/deg/lux); SSE → Pro/Flash (theme/hang, repair/placards) → Workbench (stage stream).
+
 ```
 src/
   domain/    exhibition model, store, rule engine, hang layouts, IIIF loader
